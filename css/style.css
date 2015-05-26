@@ -653,6 +653,16 @@ border-radius: 88px;
 	}
 .keep ul li a.message:hover{
 	background: url(../images/social2.png) no-repeat -175px 0px;
+	transform: rotateY(360deg);
+	}
+.keep ul li a.youtube{
+	background: url(../images/social.png) no-repeat -234px 0px;
+	display: block;
+	width: 48px;
+	height: 48px;
+	}
+.keep ul li a.youtube:hover{
+	background: url(../images/social2.png) no-repeat -234px 0px;
 	transition: .5s all;
 	-webkit-transition: .5s all;
 	-o-transition: .5s all;
