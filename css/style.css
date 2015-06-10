@@ -85,20 +85,20 @@ width:50%;
 margin-top:150px;
 }
 .banner-info h1{
-color:#ffffff;
+color:#000000;
 font-size:65px;
 margin:0;
 font-weight:400;
 }
 .banner-info p{
-color:#ffffff;
+color:#000000;
 font-size:35px;
 margin:20px 0 90px 0;
 }
 .start a{
-color:#ffffff;
+color:#000000;
 font-size:14px;
-border:2px solid #ffffff;
+border:2px solid #000000;
 border-radius:55px;
 padding:16px 30px;
 font-weight:500;
@@ -108,7 +108,7 @@ display:inline-block;
 margin-left:70px !important;
 }
 .start a:hover{
-background:#ffffff;
+background:#000000;
 border:2px solid #46c4da;
 color:#46c4da;
 }
@@ -331,7 +331,7 @@ ul.social-slide li i.mac{
   height:14px;
   width:14px;
   display:inline-block;
-  border:2px solid #ffffff;
+  border:2px solid #000000;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -339,7 +339,7 @@ ul.social-slide li i.mac{
   -ms-border-radius: 30px;
 }
 .callbacks_here a:after{
-	background: #ffffff;	
+	background: #000000;	
 }
 /*-- Slider part Ends Here --*/
 .about-right img{
@@ -374,7 +374,7 @@ line-height:1.8em;
 margin:0 0 54px 0;
 }
 .about-info a{
-color:#ffffff;
+color:#000000;
 text-decoration:none;
 font-size:14px;
 background:#46c4da;
@@ -385,7 +385,7 @@ border:2px solid #46c4da;
 .about-info a:hover{
 color:#46c4da;
 border:2px solid #46c4da;
-background:#ffffff;
+background:#000000;
 }
 .behind{
 background: #ffffff;
@@ -401,7 +401,7 @@ padding:70px 0;
 margin: 0 auto;
 width: 75%;
 line-height: 1.5em;
-color:#ffffff;
+color:#000000;
 font-size:36px;
 text-align:center;
 font-weight:400;
@@ -449,7 +449,7 @@ padding: 100px 203px 0 0px;
 margin: 0 auto;
 width: 75%;
 line-height: 1.5em;
-color:#ffffff;
+color:#000000;
 font-size:36px;
 text-align:center;
 font-weight:400;
@@ -467,7 +467,7 @@ background: linear-gradient(to right,  #46c4da 25%,#6e6f71 100%);
 .services h3{
 font-size:36px;
 margin:0 0 0px 0;
-color:#ffffff;
+color:#000000;
 font-weight:bold;
 text-align:center;
 
@@ -483,7 +483,7 @@ padding: 60px 0 60px 60px;
 }
 .services-right ul li{
 list-style-type:none;
-  color: #ffffff;
+  color: #000000;
   font-family: myriad pro;
   font-size: 16px;
   font-weight: 500;
@@ -511,7 +511,7 @@ padding: 53px 0 0 222px;
 	min-height: 382px;
 }
 .services-left  p{
-color:#ffffff;
+color:#000000;
 margin:0 0 0px 0;
 font-family:myriad pro;
 font-size:16px;
@@ -573,7 +573,7 @@ background: url(../images/themes.png) no-repeat -24px 0px;
 .clients h3{
 font-size:30px;
 margin:0 0 0px 0;
-color:#ffffff;
+color:#000000;
 font-weight:bold;
 text-align:center;
 }
@@ -597,7 +597,7 @@ background:url(../images/banner2.jpg) no-repeat 0px 0px;
 .keep h3{
 font-size:36px;
 margin:0 auto;
-color:#ffffff;
+color:#000000;
 font-weight:400;
 text-align:center;
 background: #ffffff;
@@ -692,14 +692,14 @@ margin-top:15px;
 .footer p{
 margin:0;
 font-size:16px;
-color:#ffffff;
+color:#000000;
 text-align:center;
 }
 .footer p a{
-color:#ffffff;
+color:#000000;
 }
 .footer p a:hover{
-  border-bottom: 2px dashed #ffffff;
+  border-bottom: 2px dashed #000000;
   padding-bottom: 5px;
 }
 /*-- to-top --*/
@@ -763,7 +763,7 @@ padding: 70px 0;
 	border: 1px solid #e8e8e8;
 	}
 .contact-form input[type=submit] {
-	color: #ffffff;
+	color: #000000;
 	padding: 13px 43px;
 	font-size: 16px;
 	cursor: pointer;
@@ -1248,7 +1248,7 @@ span.menu {
   padding: 0px 0;
   font-weight: 700;
   font-size: 20px;
-  color:#ffffff;
+  color:#000000;
 }
 ul.nav1{
 	display:none;

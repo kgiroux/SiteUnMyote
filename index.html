@@ -15,22 +15,23 @@
 <!--// css -->
 <!-- js -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
+<script data-main="main" src="libs/require.js/require.js"></script>
 <!-- js -->
 <!--fonts-->
-<link rel="stylesheet" href="./css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="./js/move-top.js"></script>
-<script type="text/javascript" src="./js/easing.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript" src="./js/move-top.js"></script>
+	<script type="text/javascript" src="./js/easing.js"></script>
+	<script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-</script>
+	</script>
 <!-- start-smoth-scrolling -->
 </head>
 <body>
@@ -40,6 +41,7 @@
 		<div class="header-left">
 			<a href="index.html"><img src="./images/LogoUnMyote.png" alt=""/></a>
 		</div>
+		<data-lang  lang="en"/>
 		<div class="header-right">
 			<span class="menu">MENU</span>
 					<ul class="nav1">
@@ -129,12 +131,12 @@
 <div id="about" class="about">
 	<div class="about-grids">
 		<div class="about-left">
-			<div class="about-info">
-				<h3>ABOUT US</h3>
+			<div class="about-info" id="about_text">
+				<!--<h3>ABOUT US</h3>
 				<p>UNMYOTE is a product which use the MYO's technology</p>
 				<p>MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer</p>
 				<p>Our product can be use with two MYO's armhand, for understanding and translating the sign language</p>
-				<a href="https://www.thalmic.com/en/myo/">READ MORE ABOUT MYO</a>
+				-->
 			</div>
 		</div>
 		<div class="about-right">
@@ -157,12 +159,8 @@
 		<div class="approach-left">
 			<img src="./images/principeUnMyote.jpg" alt=""/>
 		</div>
-		<div class="approach-right">
-			<h3>OUR APPROACH</h3>
-			<p>Le mutisme est un handicap qui aujourd'hui touche 1 enfants sur 150. Les personnes souffrant de mutisme sont les principales personnes qui sont exclues de la société. </p>
-			<p>L'accomplissement des taches les plus simples est une corvée pour ces personnes qui ne peuvent pas communiquer avec nous.</p>
-			<p>Le passage par la technologie MYO ainsi que notre logiciel permet de rapprocher ces personnes de nous </p>
-			<p>Pour cela nous utiliserons deux bracelet MYO qui enverrons des informations via la technologie Bluetooth à notre logiciel qui s'occupe de la traduction.</p>
+		<div class="approach-right" id="approach_text">
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -272,7 +270,7 @@
 <!--footer-->
 <div class="footer">
 	<div class="container">
-		<p>Any questions? Contact us :  <a href="mailto:sample@example.com">unmyote@gmail.com</a> </p>
+		<p>Any questions? Contact us :  <a href="mailto:unmyote@gmail.com">unmyote@gmail.com</a> </p>
 		<p>Copyright &copy; 2015 UNMYOTE</p>
 	</div>
 </div>

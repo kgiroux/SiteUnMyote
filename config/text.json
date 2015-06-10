@@ -1,0 +1,18 @@
+{
+"texten": {
+			"about" : "UNMYOTE is a product which use the MYO's technology\n MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer\nOur product can be use with two MYO's armhand, for understanding and translating the sign language",
+       		"approach" :"Translation MISSING",
+       		"genese": "",
+        	"services": "", 
+        	"user": "", 
+        	"help": ""
+        },
+"text" : {
+			"about": "UNMYOTE est un produit qui utilise la technologie MYO.\nMYO est un bracelet possédant la capacité de capter les signaux électriques passant dans les muscles du bras et qui, par le biais d’un logiciel, permet de réaliser des actions diverses.\nNotre produit permet de proposer une solution logiciel qui avec deux Bracelet MYO, permettra de comprendre et de nous traduire le langage des signes. Cette traduction sera premièrement textuel, puis de façon sonore.",
+       		"approach" :"Le mutisme est un handicap qui aujourd'hui touche 1 enfants sur 150. Les personnes souffrant de mutisme sont les principales personnes qui sont exclues de la société.\nL'accomplissement des taches les plus simples est une corvée pour ces personnes qui ne peuvent pas communiquer avec nous.\nLe passage par la technologie MYO ainsi que notre logiciel permet de rapprocher ces personnes de nous.\nPour cela nous utiliserons deux bracelet MYO qui enverrons des informations via la technologie Bluetooth à notre logiciel qui s'occupe de la traduction.",
+        	"genese": "",
+        	"services": "", 
+        	"user": "",
+        	"help": ""
+		}
+}

@@ -15,9 +15,10 @@
 <!--// css -->
 <!-- js -->
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script data-main="../main" src="../libs/require.js/require.js"></script>
 <!-- js -->
 <!--fonts-->
-	<link rel="stylesheet" href="css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <!--/fonts-->
 	<!-- start-smoth-scrolling -->
@@ -41,6 +42,7 @@
 		<div class="header-left">
 			<a href="index.html"><img src="../images/LogoUnMyote.png" alt=""/></a>
 		</div>
+		<data-lang  lang="fr"/>
 		<div class="header-right">
 			<span class="menu">MENU</span>
 					<ul class="nav1">
@@ -130,12 +132,7 @@
 <div id="about" class="about">
 	<div class="about-grids">
 		<div class="about-left">
-			<div class="about-info">
-				<h3>A PROPOS</h3>
-				<p>UNMYOTE est un produit qui utilise la technologie MYO.</p>
-				<p>MYO est un bracelet possédant la capacité de capter les signaux électriques passant dans les muscles du bras et qui, par le biais d’un logiciel, permet de réaliser des actions diverses. </p>
-				<p>Notre produit permet de proposer une solution logiciel qui avec deux Bracelet MYO, permettra de comprendre et de nous traduire le langage des signes. Cette traduction sera premièrement textuel, puis de façon sonore.</p>
-				<a href="https://www.thalmic.com/en/myo/">EN SAVOIR PLUS A PROPOS DE  MYO</a>
+			<div class="about-info" id="about_text">
 			</div>
 		</div>
 		<div class="about-right">
@@ -158,12 +155,8 @@
 		<div class="approach-left">
 			<img src="../images/principeUnMyote.jpg" alt=""/>
 		</div>
-		<div class="approach-right">
-			<h3>NOTRE APPROCHE</h3>
-			<p>Le mutisme est un handicap qui aujourd'hui touche 1 enfants sur 150. Les personnes souffrant de mutisme sont les principales personnes qui sont exclues de la société. </p>
-			<p>L'accomplissement des taches les plus simples est une corvée pour ces personnes qui ne peuvent pas communiquer avec nous. </p> 
-			<p>Le passage par la technologie MYO ainsi que notre logiciel permet de rapprocher ces personnes de nous </p>
-			<p>Pour cela nous utiliserons deux bracelet MYO qui enverrons des informations via la technologie Bluetooth à notre logiciel qui s'occupe de la traduction.</p>
+		<div class="approach-right" id="approach_text">
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -179,15 +172,13 @@
 <!--services-->
 <div id="services" class="services">
 	<div class="container">
-		<h3>NOS SERVICES</h3>
+		<h3>NOTRE GENESE</h3>
 	</div>
 </div>
 <!--//services-->
 <div class="services-grids">
 	<div class="services-left">
-		<p>We work with our clients in two ways. We can help you design your master data sets, 
-		provide a blueprint for your organization to execute, or we can design and execute database 
-		development activities. Do it all. A few of the content services we offer…</p>
+		<p id="genese">Nous sommes deux étudiants de l'école ESIGELEC qui se sont spécialisé dans le domaine du Génie du système d'information. Donner l'accès à l'information et rétablir la communication entre nous et les personnes souffrant de mustisme est l'objectif de ce projet. </p>
 	</div>
 	<div class="services-right">
 		<div class="services-list">
@@ -265,6 +256,7 @@
 			<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
 			<li><a class="googl" href="https://plus.google.com/u/1/109924670256087185916/posts"></a></li>
 			<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
+			<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
 		</ul>
 	</div>
 </div>
@@ -272,7 +264,7 @@
 <!--footer-->
 <div class="footer">
 	<div class="container">
-		<p>Des questions ? Contactez nous : <a href="mailto:sample@example.com">unmyote@gmail.com</a> </p>
+		<p>Des questions ? Contactez nous : <a href="mailto:unmyote@gmail.com">unmyote@gmail.com</a> </p>
 		<p>Copyright &copy; 2015 UNMYOTE</p>
 	</div>
 </div>
