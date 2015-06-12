@@ -1,0 +1,11 @@
+J'ai crée un fichier text.json qui contient deux versions du texte 
+
+Anglais et Francais.
+texten et text
+
+Le texte est récuperer dans le via l'utilisation du fichier main.js
+
+Il ne reste plus qu'a mettre le texte dans le fichier json. et demande la MAJ dans le fichier main.js
+
+Cela permet d'éviter d'avoir a copier coller le texte d'une page html à l'autre.
+De plus il plus facile de rajouter du texte à un endroit qu'à deux ^^

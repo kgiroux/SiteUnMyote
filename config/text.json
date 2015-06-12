@@ -5,14 +5,32 @@
        		"genese": "",
         	"services": "", 
         	"user": "", 
-        	"help": ""
+        	"help": "",
+        	"menu" : ["HOME","ABOUT","APPROACH","SERVICES"],
+        	"slidingtext":["A SOLUTION FOR PEOPLE SUFFERING OF MUTISM","SOFTWARE SOLUTION","POWERED BY MYO"],
+        	"slidingbutton":"START TOUR",
+        	"sendaquote":"SEND A QUOTE",
+        	"aboutus" :"About us",
+        	"linkabout" :"READ MORE ABOUT MYO",
+        	"ourapproach" :"Our Approach",
+        	"message" :"Behind every successful asset management software implementation is great content.",
+        	"think":"Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo"
         },
-"text" : {
+"textfr" : {
 			"about": "UNMYOTE est un produit qui utilise la technologie MYO.\nMYO est un bracelet possédant la capacité de capter les signaux électriques passant dans les muscles du bras et qui, par le biais d’un logiciel, permet de réaliser des actions diverses.\nNotre produit permet de proposer une solution logiciel qui avec deux Bracelet MYO, permettra de comprendre et de nous traduire le langage des signes. Cette traduction sera premièrement textuel, puis de façon sonore.",
        		"approach" :"Le mutisme est un handicap qui aujourd'hui touche 1 enfants sur 150. Les personnes souffrant de mutisme sont les principales personnes qui sont exclues de la société.\nL'accomplissement des taches les plus simples est une corvée pour ces personnes qui ne peuvent pas communiquer avec nous.\nLe passage par la technologie MYO ainsi que notre logiciel permet de rapprocher ces personnes de nous.\nPour cela nous utiliserons deux bracelet MYO qui enverrons des informations via la technologie Bluetooth à notre logiciel qui s'occupe de la traduction.",
         	"genese": "",
         	"services": "", 
         	"user": "",
-        	"help": ""
+        	"help": "",
+        	"menu" : ["ACCUEIL","A PROPOS","APPROCHE","SERVICES"],
+        	"slidingtext":["UNE SOLUTION POUR LES PERSONNES SOUFFRANT DE MUTISME","SOLUTION LOGICIEL","POWERED BY MYO"],
+        	"slidingbutton":"COMMENCER",
+        	"sendaquote":"TWITTER",
+			"aboutus" :"A propos de nous",
+			"linkabout" :"EN SAVOIR PLUS A PROPOS DE MYO",
+			"ourapproach" :"Notre approche",
+			"message" :"",
+        	"think":""
 		}
 }

@@ -19,7 +19,7 @@
 <!-- js -->
 <!--fonts-->
 	<link rel="stylesheet" href="./css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 <!--/fonts-->
 <!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="./js/move-top.js"></script>
@@ -34,22 +34,23 @@
 	</script>
 <!-- start-smoth-scrolling -->
 </head>
+
 <body>
+<data-lang lang="en"/>
 <!--header-->
 <div class="header">
 	<div class="container">
 		<div class="header-left">
 			<a href="index.html"><img src="./images/LogoUnMyote.png" alt=""/></a>
 		</div>
-		<data-lang  lang="en"/>
 		<div class="header-right">
 			<span class="menu">MENU</span>
 					<ul class="nav1">
-						<li><a class="scroll active" href="#home">HOME</a></li>
-						<li><a class="scroll" href="#about">ABOUT</a></li>	
-						<li><a class="scroll" href="#approach">OUR  APPROACH</a></li>
-						<li><a class="scroll" href="#services">OUR SERVICES</a></li>
-						<li><a href="./fr/"><img src="./images/drapeau_france.jpg" alt="drapeau_france"></a>
+						<li><a class="scroll active menu_class" href="#home">HOME</a></li>
+						<li><a class="scroll menu_class" href="#about">ABOUT</a></li>	
+						<li><a class="scroll menu_class" href="#approach">OUR  APPROACH</a></li>
+						<li><a class="scroll menu_class" href="#services">OUR SERVICES</a></li>
+						<li><a id="lang_value" value="en"><img id="image_drapeau" src="./images/drapeau_france.jpg" alt="drapeau_france"></a>
 					</ul>
 				<!-- script for menu -->
 					<script> 
@@ -95,30 +96,30 @@
 				<li>
 					<div class="banner-info text-center">
 						<h1>UNMYOTE</h1>
-						<p>A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
+						<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
 						<div class="start">
-								<a class="scroll" href="#about">START TOUR</a>
-								<a href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="banner-info text-center">
 						<h1>UNMYOTE</h1>
-						<p>SOFTWARE SOLUTION</p>
+						<p class="text_slide" >SOFTWARE SOLUTION</p>
 						<div class="start">
-								<a class="scroll" href="#about">START TOUR</a>
-								<a href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="banner-info text-center">
 						<h1>UNMYOTE </h1>
-						<p>POWERED BY MYO </p>
+						<p class="text_slide">POWERED BY MYO </p>
 						<div class="start">
-								<a class="scroll" href="#about">START TOUR</a>
-								<a href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
 				</li>
@@ -132,11 +133,6 @@
 	<div class="about-grids">
 		<div class="about-left">
 			<div class="about-info" id="about_text">
-				<!--<h3>ABOUT US</h3>
-				<p>UNMYOTE is a product which use the MYO's technology</p>
-				<p>MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer</p>
-				<p>Our product can be use with two MYO's armhand, for understanding and translating the sign language</p>
-				-->
 			</div>
 		</div>
 		<div class="about-right">
@@ -149,7 +145,7 @@
 <!--behind-->
 <div class="behind">
 	<div class="container">
-		<p>“Behind every successful asset management software implementation is great content.”</p>
+		<p id="message">“Behind every successful asset management software implementation is great content.”</p>
 	</div>
 </div>
 <!--//behind-->
@@ -169,7 +165,7 @@
 <!--kick-->
 <div class="kick">
 	<div class="container">
-		<p>“Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo”</p>
+		<p id="think">“Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo”</p>
 	</div>
 </div>
 <!--//kick-->
@@ -256,7 +252,7 @@
 <!--keep in touch-->
 <div class="keep">
 	<div class="container">
-		<h3>Keep in touch with Us</h3>
+		<h3 id="keepintouch">Keep in touch with Us</h3>
 		<ul>
 			<li><a class="facebook" href="https://www.facebook.com/pages/UnMyote/110064849324870"></a></li>
 			<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
