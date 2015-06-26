@@ -14,7 +14,22 @@
         	"linkabout" :"READ MORE ABOUT MYO",
         	"ourapproach" :"Our Approach",
         	"message" :"Behind every successful asset management software implementation is great content.",
-        	"think":"Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo"
+        	"think":"Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
+        	"timeLine"  : [
+        					{
+        						"type" : "1",
+        						"title" : "ICI",
+        						"date" : "date ici",
+        						"body" : "ici text"
+        					},
+        					{
+        						"type" : "2",
+        						"title" : "ICI2",
+        						"date" : "date ici2",
+        						"body" : "ici2 text"
+        					}
+        				   ]
+        
         },
 "textfr" : {
 			"about": "UNMYOTE est un produit utilisant la technologie de la société Thalmic Labs : MYO.\nMYO est un bracelet dont la capacité est de capter la position ainsi que le mouvement du bras et de la main. Par le biais d’une interprétation logiciel, ce dispositif permet de réaliser toutes sortes d'actions.\nVia cette technologie, nous souhaitons proposer une solution logiciel qui, à l'aide de deux bracelet MYO, permettra de traduire la langue des signes pour les personnes atteintes de mutisme.\n",
@@ -31,6 +46,20 @@
 			"linkabout" :"EN SAVOIR PLUS A PROPOS DE MYO",
 			"ourapproach" :"Notre approche",
 			"message" :"",
-        	"think":""
+        	"think":"",
+        	"timeLine"  : [
+        					{
+        						"type" : "1",
+        						"title" : "ICI",
+        						"date" : "date ici",
+        						"body" : "ici text"
+        					},
+        					{
+        						"type" : "2",
+        						"title" : "ICI2",
+        						"date" : "date ici2",
+        						"body" : "ici2 text"
+        					}
+        				   ]
 		}
 }
