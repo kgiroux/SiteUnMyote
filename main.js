@@ -109,7 +109,7 @@
     		ul.removeChild(ul.firstChild)
     	}
     	
-    	for(var i = 0; i<text.timeLine.length; i++){
+    	for(var i = 0; i<text.timeline.length; i++){
         	var li = document.createElement("li");
         	if(i%2==1)
         		li.classList.add("timeline-inverted");
@@ -118,7 +118,45 @@
         	divBadge.classList.add("timeline-badge");
         	var iImage = document.createElement("i");
         	iImage.classList.add("fa");
-        	iImage.classList.add("fa-check");
+        	console.log(text.timeline[i].type);	
+        	switch(text.timeline[i].type){
+        	case "1" :
+        		// NewsPaper symbole
+        		iImage.classList.add("fa-newspaper-o");
+        		break;
+        	case "2" : 
+        		// Check symbole
+        		iImage.classList.add("fa-check");
+        		break;
+        	case "3" : 
+        		// CARD symbole
+        		iImage.classList.add("fa-cc-mastercard");
+        		break;
+        	case "4" : 
+        		//Android
+        		iImage.classList.add("fa-android");
+        		break;
+        	case "5" : 
+        		//Android
+        		iImage.classList.add("fa-apple");
+        		break;
+        	case "6" : 
+        		//Android
+        		iImage.classList.add("fa-windows");
+        		break;
+        	case "7" : 
+        		//Android
+        		iImage.classList.add("fa-youtube");
+        		break;
+        	case "8" : 
+        		//Android
+        		iImage.classList.add("fa-twitter-square");
+        		break;
+        	case "9" : 
+        		//Android
+        		iImage.classList.add("fa-facebook-square");
+        		break;
+        	}
         	divBadge.appendChild(iImage);
         	
         	
@@ -128,7 +166,7 @@
         	divheader.classList.add("timeline-heading")
         	var h4title = document.createElement("h4");
         	h4title.classList.add("timeline-title");		
-        	h4title.innerText = text.timeLine[i].title
+        	h4title.innerText = text.timeline[i].title
         	
         	var pTime = document.createElement("p");
         	/* Header Time Line */
@@ -138,7 +176,7 @@
         	iTime.classList.add("fa");
         	iTime.classList.add("fa-clock-o");
         	smallTime.appendChild(iTime);
-        	smallTime.innerText = text.timeLine[i].date;
+        	smallTime.innerText = text.timeline[i].date;
         	pTime.appendChild(smallTime);
         	divheader.appendChild(h4title);
         	divheader.appendChild(pTime);
@@ -148,9 +186,20 @@
         	divBody.classList.add("timeline-body");
         	
         	var pBody = document.createElement("p");
-        	pBody.innerText  = text.timeLine[i].body;
-        	
+        	pBody.innerText  = text.timeline[i].body;
         	divBody.appendChild(pBody);
+        	
+        	if(text.timeline[i].img != undefined){
+        		var BodyImage = document.createElement("img");
+            	BodyImage.setAttribute("src",text.timeline[i].img)
+            	BodyImage.setAttribute("alt",text.timeline[i].altimg);
+            	BodyImage.classList.add("img-responsive");
+            	divBody.appendChild(BodyImage);
+        	}
+        	
+        	
+        	
+        	
         	
         	
         	divPanel.appendChild(divheader);
@@ -162,23 +211,5 @@
         	
         	ul.appendChild(li);
     	}
-    	
-    	
-    	/*<li>
-        <div class="timeline-badge"><i class="fa fa-check"></i>
-        </div>
-        <div class="timeline-panel">
-            <div class="timeline-heading">
-                <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
-                </p>
-            </div>
-            <div class="timeline-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
-            </div>
-        </div>
-    </li>*/
-    	
-    	
     }
 });

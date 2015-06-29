@@ -1,65 +1,76 @@
 {
-"texten": {
-			"about" : "UNMYOTE is a product which use the MYO's technology\n MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer\nOur product can be use with two MYO's armhand, for understanding and translating the sign language",
-       		"approach" :"Translation MISSING",
-       		"genese": "",
-        	"services": "", 
-        	"user": "", 
-        	"help": "",
-        	"menu" : ["HOME","ABOUT","APPROACH","SERVICES"],
-        	"slidingtext":["A SOLUTION FOR PEOPLE SUFFERING OF MUTISM","SOFTWARE SOLUTION","POWERED BY MYO"],
-        	"slidingbutton":"START TOUR",
-        	"sendaquote":"SEND A QUOTE",
-        	"aboutus" :"About us",
-        	"linkabout" :"READ MORE ABOUT MYO",
-        	"ourapproach" :"Our Approach",
-        	"message" :"Behind every successful asset management software implementation is great content.",
-        	"think":"Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
-        	"timeLine"  : [
-        					{
-        						"type" : "1",
-        						"title" : "ICI",
-        						"date" : "date ici",
-        						"body" : "ici text"
-        					},
-        					{
-        						"type" : "2",
-        						"title" : "ICI2",
-        						"date" : "date ici2",
-        						"body" : "ici2 text"
-        					}
-        				   ]
-        
-        },
-"textfr" : {
-			"about": "UNMYOTE est un produit utilisant la technologie de la société Thalmic Labs : MYO.\nMYO est un bracelet dont la capacité est de capter la position ainsi que le mouvement du bras et de la main. Par le biais d’une interprétation logiciel, ce dispositif permet de réaliser toutes sortes d'actions.\nVia cette technologie, nous souhaitons proposer une solution logiciel qui, à l'aide de deux bracelet MYO, permettra de traduire la langue des signes pour les personnes atteintes de mutisme.\n",
-       		"approach": "Le mutisme est un handicap qui, de nos jours, touche près d'un enfant sur 150. Ces personnes rencontrent une difficulté réelle de communication avec toute personne ne maitrisant pas la langue des signes.\nQue ce soit pour communiquer avec leur entourage personnel, professionnel ou bien pour les discussions de la vie de tous les jours, les \"muets\" se retrouvent fasse à une réelle barière qui les éloigne de l'aspect social de notre monde.\nL'utilisation du bracelet MYO couplé à notre logiciel permettra à ces gens de retrouver une facilité de communication essentielle à leur insertion professionelle et sociale.\nGrace à UNMYOTE, un simple smartphone, une tablette ou un ordinateur deviendra l'interprète privilégié de la langue des signes.",
-        	"genese": "",
-        	"services": "", 
-        	"user": "",
-        	"help": "",
-        	"menu" : ["ACCUEIL","A PROPOS","APPROCHE","SERVICES"],
-        	"slidingtext":["UNE SOLUTION POUR LES PERSONNES SOUFFRANT DE MUTISME","SOLUTION LOGICIEL","POWERED BY MYO"],
-        	"slidingbutton":"COMMENCER",
-        	"sendaquote":"TWITTER",
-			"aboutus" :"A propos de nous",
-			"linkabout" :"EN SAVOIR PLUS A PROPOS DE MYO",
-			"ourapproach" :"Notre approche",
-			"message" :"",
-        	"think":"",
-        	"timeLine"  : [
-        					{
-        						"type" : "1",
-        						"title" : "Talents du numérique",
-        						"date" : " 21 mai 2015",
-        						"body" : "Soirée exceptionnelle avec de nombreuses personnalités à la soirée du Talents du numérique. "
-        					},
-        					{
-        						"type" : "2",
-        						"title" : "ICI2",
-        						"date" : "date ici2",
-        						"body" : "ici2 text"
-        					}
-        				   ]
-		}
+	"texten": {
+		"about": "UNMYOTE is a product which use the MYO's technology\n MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer\nOur product can be use with two MYO's armhand, for understanding and translating the sign language",
+		"approach": "Translation MISSING",
+		"genese": "",
+		"services": "",
+		"user": "",
+		"help": "",
+		"menu": ["HOME",
+		"ABOUT",
+		"APPROACH",
+		"SERVICES"],
+		"slidingtext": ["A SOLUTION FOR PEOPLE SUFFERING OF MUTISM",
+		"SOFTWARE SOLUTION",
+		"POWERED BY MYO"],
+		"slidingbutton": "START TOUR",
+		"sendaquote": "SEND A QUOTE",
+		"aboutus": "About us",
+		"linkabout": "READ MORE ABOUT MYO",
+		"ourapproach": "Our Approach",
+		"message": "Behind every successful asset management software implementation is great content.",
+		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
+		"timeline": [{
+			"type": "1",
+			"title": "ICI",
+			"date": "date ici",
+			"body": "ici text",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "4",
+			"title": "ICI2",
+			"date": "date ici2",
+			"body": "ici2 text",
+			"img": "images/banner2.jpg",
+			"altimg": "TEXTImage"
+		}]
+	},
+	"textfr": {
+		"about": "UNMYOTE est un produit utilisant la technologie de la société Thalmic Labs : MYO.\nMYO est un bracelet dont la capacité est de capter la position ainsi que le mouvement du bras et de la main. Par le biais d’une interprétation logiciel, ce dispositif permet de réaliser toutes sortes d'actions.\nVia cette technologie, nous souhaitons proposer une solution logiciel qui, à l'aide de deux bracelet MYO, permettra de traduire la langue des signes pour les personnes atteintes de mutisme.\n",
+		"approach": "Le mutisme est un handicap qui, de nos jours, touche près d'un enfant sur 150. Ces personnes rencontrent une difficulté réelle de communication avec toute personne ne maitrisant pas la langue des signes.\nQue ce soit pour communiquer avec leur entourage personnel, professionnel ou bien pour les discussions de la vie de tous les jours, les \"muets\" se retrouvent fasse à une réelle barière qui les éloigne de l'aspect social de notre monde.\nL'utilisation du bracelet MYO couplé à notre logiciel permettra à ces gens de retrouver une facilité de communication essentielle à leur insertion professionelle et sociale.\nGrace à UNMYOTE, un simple smartphone, une tablette ou un ordinateur deviendra l'interprète privilégié de la langue des signes.",
+		"genese": "",
+		"services": "",
+		"user": "",
+		"help": "",
+		"menu": ["ACCUEIL",
+		"A PROPOS",
+		"APPROCHE",
+		"SERVICES"],
+		"slidingtext": ["UNE SOLUTION POUR LES PERSONNES SOUFFRANT DE MUTISME",
+		"SOLUTION LOGICIEL",
+		"POWERED BY MYO"],
+		"slidingbutton": "COMMENCER",
+		"sendaquote": "TWITTER",
+		"aboutus": "A propos de nous",
+		"linkabout": "EN SAVOIR PLUS A PROPOS DE MYO",
+		"ourapproach": "Notre approche",
+		"message": "",
+		"think": "",
+		"timeline": [{
+			"type": "1",
+			"title": "Talents du numérique",
+			"date": " 21 mai 2015",
+			"body": "Soirée exceptionnelle avec de nombreuses personnalités à la soirée du Talents du numérique. ",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "4",
+			"title": "ICI2",
+			"date": "date ici2",
+			"body": "ici2 text",
+			"img": "images/banner2.jpg",
+			"altimg": "TEXTImage"
+		}]
+	}
 }
