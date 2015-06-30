@@ -10,15 +10,44 @@
     var text_data;
     var lang_button = document.getElementById("lang_value");
     var lang = document.querySelector("data-lang");
+    
+    
+    function createCookie(name,value,days) {
+    	if (days) {
+    		var date = new Date();
+    		date.setTime(date.getTime()+(days*24*60*60*1000));
+    		var expires = "; expires="+date.toGMTString();
+    	}
+    	else var expires = "";
+    	document.cookie = name+"="+value+expires+"; path=/";
+    }
+
+    function readCookie(name) {
+    	var nameEQ = name + "=";
+    	var ca = document.cookie.split(';');
+    	for(var i=0;i < ca.length;i++) {
+    		var c = ca[i];
+    		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    	}
+    	return null;
+    }
+
+    function eraseCookie(name) {
+    	createCookie(name,"",-1);
+    }
+    lang_button = document.getElementById("lang_value");
     lang_button.onclick = function(){
     	if(lang_button != null){
         	if(lang_button.value =="fr"){
+        		createCookie("lang","fr",365)
         		changeLang("fr");
         		this.value = "en";
         		var img_button = document.getElementById("image_drapeau");
         		img_button.src="./images/drapeau_anglais.jpg";
         		img_button.alt ="english_flag";
         	}else{
+        		createCookie("lang","en",365)
         		changeLang("en");
         		this.value ="fr";
         		var img_button = document.getElementById("image_drapeau");
@@ -27,7 +56,24 @@
         	}
         }
     }
-    lang_button.click();
+    
+    
+    var lang_value = readCookie("lang")
+    if(lang_value != null){
+    	lang_button.value = lang_value;
+        changeLang(lang_value)
+        if(lang_value == "fr"){
+        	var img_button = document.getElementById("image_drapeau");
+    		img_button.src="./images/drapeau_anglais.jpg";
+        }else{
+        	var img_button = document.getElementById("image_drapeau");
+    		img_button.src="./images/drapeau_france.jpg";
+        }
+    }else{
+    	lang_button = document.getElementById("lang_value")
+    	lang_button.value = "en";
+    	lang_button.click();
+    }
     
     
     function changeLang(langvalue){
