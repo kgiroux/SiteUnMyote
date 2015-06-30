@@ -22,9 +22,10 @@
 		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
 		"timeline": [{
 			"type": "1",
-			"title": "ICI",
-			"date": "date ici",
-			"body": "ici text",
+			"title": "Naissance",
+			"date": "Avril 2015",
+			"body": "Naissance du projet et participation au concours \"Les Talents du Numérique\"",
+			"img": "images/TDN.png",
 			"altimg": "TEXTImage"
 		},
 		{
@@ -59,17 +60,42 @@
 		"think": "",
 		"timeline": [{
 			"type": "1",
-			"title": "Talents du numérique",
-			"date": " 21 mai 2015",
-			"body": "Soirée exceptionnelle avec de nombreuses personnalités à la soirée du Talents du numérique. ",
+			"title": "Naissance",
+			"date": "Avril 2015",
+			"body": "Naissance du projet et participation au concours \"Les Talents du Numérique\"",
+			"img": "images/LogoUnmyote.png",
 			"altimg": "TEXTImage"
 		},
 		{
-			"type": "4",
-			"title": "ICI2",
+			"type": "1",
+			"title": "Publicité",
+			"date": "Avril-Mai 2015",
+			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
+			"img": "images/media.jpg",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "1",
+			"title": "Talents du numérique",
+			"date": "21 mai 2015",
+			"body": "Soirée de remise de prix pour le concours \"Les Talents du Numérique\". Rencontre de nombreuses personnes dans le domaine du numérique : Guy Mamou-Mani (président de Syntec Numérique), Bertin Nahum (Fondateur et président de Medtech), Pierre-Noel Luiggi (Fondateur d'Oscaro.com), et plein d'autres ...",
+			"img": "images/TDN.png",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "6",
+			"title": "Lancement du site UNMYOTE !",
 			"date": "date ici2",
-			"body": "ici2 text",
-			"img": "images/banner2.jpg",
+			"body": "Ouverture du site UNMYOTE qui rendra compte de l'actualité du projet et permettra de faire le lien avec nos pages sur les différents réseaux sociaux.",
+			"img": "images/website.jpg",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "6",
+			"title": "Reception des bracelets !",
+			"date": "Juillet 2015",
+			"body": "Réception des 2 bracelets MYO et début des tests pour en évaluer les capacités.",
+			"img": "images/myo.jpg",
 			"altimg": "TEXTImage"
 		}]
 	}
