@@ -3,14 +3,13 @@
     'use strict';   
     // About //
     var title;
+    var text;
     var data; 
     var link_about;
     var data_element_text; 
     var text_data;
     var lang_button = document.getElementById("lang_value");
     var lang = document.querySelector("data-lang");
-    
-    
     lang_button.onclick = function(){
     	if(lang_button != null){
         	if(lang_button.value =="fr"){
@@ -36,7 +35,7 @@
     	var tab_lang_en = config.menuen;
     	var slidingtext_en= config.slidingtexten; 
     	var slidingtext_fr= config.slidingtextfr;
-    	var text;
+    	
     	if(langvalue =="en"){
     		text = config.texten;
     	}else{
@@ -64,7 +63,6 @@
     	}
     	title = document.createElement("h3");
     	title.innerText = text.aboutus;
-        console.log(text);
     	link_about = document.createElement("a");
         link_about.setAttribute("href","https://www.thalmic.com/en/myo/");
         link_about.innerText = text.linkabout;
@@ -95,6 +93,123 @@
       //Traitement message 
         data_element_text = document.getElementById("message");
         data_element_text.innerText = text.message;
+    
+        changeTimeLine();
     }
     
+    
+    function changeTimeLine(){
+    	
+    	
+    	
+    	console.log(text);
+    	var ul = document.getElementById("timelineId");
+    	
+    	while(ul.firstChild != null){
+    		ul.removeChild(ul.firstChild)
+    	}
+    	
+    	for(var i = 0; i<text.timeline.length; i++){
+        	var li = document.createElement("li");
+        	if(i%2==1)
+        		li.classList.add("timeline-inverted");
+        	/* Badge */
+        	var divBadge = document.createElement("div");
+        	divBadge.classList.add("timeline-badge");
+        	var iImage = document.createElement("i");
+        	iImage.classList.add("fa");
+        	console.log(text.timeline[i].type);	
+        	switch(text.timeline[i].type){
+        	case "1" :
+        		// NewsPaper symbole
+        		iImage.classList.add("fa-newspaper-o");
+        		break;
+        	case "2" : 
+        		// Check symbole
+        		iImage.classList.add("fa-check");
+        		break;
+        	case "3" : 
+        		// CARD symbole
+        		iImage.classList.add("fa-cc-mastercard");
+        		break;
+        	case "4" : 
+        		//Android
+        		iImage.classList.add("fa-android");
+        		break;
+        	case "5" : 
+        		//Android
+        		iImage.classList.add("fa-apple");
+        		break;
+        	case "6" : 
+        		//Android
+        		iImage.classList.add("fa-windows");
+        		break;
+        	case "7" : 
+        		//Android
+        		iImage.classList.add("fa-youtube");
+        		break;
+        	case "8" : 
+        		//Android
+        		iImage.classList.add("fa-twitter-square");
+        		break;
+        	case "9" : 
+        		//Android
+        		iImage.classList.add("fa-facebook-square");
+        		break;
+        	}
+        	divBadge.appendChild(iImage);
+        	
+        	
+        	var divPanel = document.createElement("div")
+        	divPanel.classList.add("timeline-panel");
+        	var divheader = document.createElement("div");
+        	divheader.classList.add("timeline-heading")
+        	var h4title = document.createElement("h4");
+        	h4title.classList.add("timeline-title");		
+        	h4title.innerText = text.timeline[i].title
+        	
+        	var pTime = document.createElement("p");
+        	/* Header Time Line */
+        	var smallTime = document.createElement("small");
+        	smallTime.classList.add("text-muted");
+        	var iTime = document.createElement("i");
+        	iTime.classList.add("fa");
+        	iTime.classList.add("fa-clock-o");
+        	smallTime.appendChild(iTime);
+        	smallTime.innerText = text.timeline[i].date;
+        	pTime.appendChild(smallTime);
+        	divheader.appendChild(h4title);
+        	divheader.appendChild(pTime);
+        	
+        	/* Body TimeLine*/
+        	var divBody = document.createElement("div");
+        	divBody.classList.add("timeline-body");
+        	
+        	var pBody = document.createElement("p");
+        	pBody.innerText  = text.timeline[i].body;
+        	divBody.appendChild(pBody);
+        	
+        	if(text.timeline[i].img != undefined){
+        		var BodyImage = document.createElement("img");
+            	BodyImage.setAttribute("src",text.timeline[i].img)
+            	BodyImage.setAttribute("alt",text.timeline[i].altimg);
+            	BodyImage.classList.add("img-responsive");
+            	divBody.appendChild(BodyImage);
+        	}
+        	
+        	
+        	
+        	
+        	
+        	
+        	divPanel.appendChild(divheader);
+        	divPanel.appendChild(divBody);
+        	
+        	li.appendChild(divBadge);
+        	li.appendChild(divPanel);
+        	
+        	
+        	ul.appendChild(li);
+    	}
+    }
 });
