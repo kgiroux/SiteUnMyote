@@ -9,7 +9,7 @@
 		"menu": ["HOME",
 		"ABOUT",
 		"APPROACH",
-		"SERVICES"],
+		"HISTORY"],
 		"slidingtext": ["A SOLUTION FOR PEOPLE SUFFERING OF MUTISM",
 		"SOFTWARE SOLUTION",
 		"POWERED BY MYO"],
@@ -18,7 +18,9 @@
 		"aboutus": "About us",
 		"linkabout": "READ MORE ABOUT MYO",
 		"ourapproach": "Our Approach",
+		"ourhistory": "Our History",
 		"message": "Behind every successful asset management software implementation is great content.",
+		"Someofourpartener":"Our Parteners",
 		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
 		"timeline": [{
 			"type": "1",
@@ -47,7 +49,7 @@
 		"menu": ["ACCUEIL",
 		"A PROPOS",
 		"APPROCHE",
-		"SERVICES"],
+		"HISTOIRE"],
 		"slidingtext": ["UNE SOLUTION POUR LES PERSONNES SOUFFRANT DE MUTISME",
 		"SOLUTION LOGICIEL",
 		"POWERED BY MYO"],
@@ -56,7 +58,9 @@
 		"aboutus": "A propos de nous",
 		"linkabout": "EN SAVOIR PLUS A PROPOS DE MYO",
 		"ourapproach": "Notre approche",
+		"ourhistory": "Notre Histoire",
 		"message": "",
+		"Someofourpartener":"Nos Partenaires",
 		"think": "",
 		"timeline": [{
 			"type": "1",
@@ -72,7 +76,8 @@
 			"date": "Avril-Mai 2015",
 			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
 			"img": "images/media.jpg",
-			"altimg": "TEXTImage"
+			"altimg": "TEXTImage",
+			"video" :"//www.youtube.com/embed/L7zTyFp0Ftg?autoplay=1"
 		},
 		{
 			"type": "1",
@@ -81,6 +86,7 @@
 			"body": "Soirée de remise de prix pour le concours \"Les Talents du Numérique\". Rencontre de nombreuses personnes dans le domaine du numérique : Guy Mamou-Mani (président de Syntec Numérique), Bertin Nahum (Fondateur et président de Medtech), Pierre-Noel Luiggi (Fondateur d'Oscaro.com), et plein d'autres ...",
 			"img": "images/TDN.png",
 			"altimg": "TEXTImage"
+			
 		},
 		{
 			"type": "6",

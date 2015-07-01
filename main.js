@@ -93,6 +93,12 @@
 	 		menu_item[i].innerText = text.menu[i];
 	 	}
 	 	
+	 	var historyText = document.getElementById("history");
+	 	historyText.innerText = text.ourhistory;
+	 	
+	 	var partenerText = document.getElementById("partener");
+	 	partenerText.innerText = text.Someofourpartener
+	 	
 	 	var slide_text = document.querySelectorAll(".text_slide");
 	 	var slide_button = document.querySelectorAll(".button_start");
 	 	var sendaquote = document.querySelectorAll(".sendaquote");
@@ -243,7 +249,23 @@
             	divBody.appendChild(BodyImage);
         	}
         	
-        	
+        	if(text.timeline[i].video != undefined){
+        		var BodyVideo = document.createElement("div");
+        		BodyVideo.classList.add("embed-responsive");
+        		BodyVideo.classList.add("embed-responsive-4by3");
+        		var iframeVideo = document.createElement("iframe");
+        		iframeVideo.classList.add("embed-responsive-item");
+
+        		//iframeVideo.classList.add("embed-responsive");
+        		
+
+        		//iframeVideo.classList.add("embed-responsive-4by3");
+        		iframeVideo.setAttribute("src",text.timeline[i].video);
+        		
+        		
+        		BodyVideo.appendChild(iframeVideo);
+        		divBody.appendChild(BodyVideo);
+        	}
         	
         	
         	
