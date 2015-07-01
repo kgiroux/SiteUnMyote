@@ -51,6 +51,11 @@ background: linear-gradient(to right,  #ffffff 25%,#46c4da 100%);
   border-bottom: 2px dashed #ffffff;
   padding-bottom: 8px;
 }
+
+.movetofront{
+	z-index : 1;
+	background-color : rgba(93, 96, 100, 0.76);
+}
 .header-left{
 float:left;
 width:20%;
