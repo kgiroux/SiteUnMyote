@@ -260,7 +260,8 @@
         		
 
         		//iframeVideo.classList.add("embed-responsive-4by3");
-        		iframeVideo.setAttribute("src",text.timeline[i].video);
+        		var src = "//www.youtube.com/embed/" + text.timeline[i].video +"?autoplay=0"
+        		iframeVideo.setAttribute("src",src);
         		
         		
         		BodyVideo.appendChild(iframeVideo);
