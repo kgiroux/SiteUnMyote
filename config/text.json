@@ -1,7 +1,7 @@
 {
 	"texten": {
 		"about": "UNMYOTE is a product which use the MYO's technology\n MYO is a armhand that can get the electric's signal which pass on the arm. With a software, that armhand can execute some action on computer\nOur product can be use with two MYO's armhand, for understanding and translating the sign language",
-		"approach": "Translation MISSING",
+		"approach": "Mutism is handicap that touch today one children on 150. These persons encounter a real difficulty of communication with all the other person who doesn't know or understand sign's language.\nWhen they would like to speak with their friends, colleague or for just a daily speak, mute people come face to barrier that make impossible the social aspect with \"our world\".\nWith a Myo's armhand and with our software, we can offer a new tool for facilating the communication which is essential for their work and social's life. With UNMYOTE, a smartphone, a tablet or a computer will become the interpreter of this sign's language",
 		"genese": "",
 		"services": "",
 		"user": "",
@@ -24,18 +24,46 @@
 		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
 		"timeline": [{
 			"type": "1",
-			"title": "Naissance",
-			"date": "Avril 2015",
-			"body": "Naissance du projet et participation au concours \"Les Talents du Numérique\"",
-			"img": "images/TDN.png",
+			"title": "Birth",
+			"date": "April 2015",
+			"body": "Birth of the project for the \"Les Talents du Numérique\" competition",
+			"img": "images/LogoUnmyote.png",
 			"altimg": "TEXTImage"
 		},
 		{
-			"type": "4",
-			"title": "ICI2",
+			"type": "1",
+			"title": "Advertissement",
+			"date": "April-May 2015",
+			"body": "Pubilishing in two newspapers (Le Paris-Normandie, L'Impartiale) and interview for three radio (France Inter, France Bleue Haute-Normandie, Radio Cristal) about the UNMYOTE's project !",
+			"img": "images/media.jpg",
+			"altimg": "TEXTImage",
+			"video" :"L7zTyFp0Ftg",
+			"download" : "uri",
+			"downloadname": "name"
+		},
+		{
+			"type": "1",
+			"title": "Talents du numérique",
+			"date": "21 mai 2015",
+			"body": "Soirée de remise de prix pour le concours \"Les Talents du Numérique\". Meeting lot of personality in the numeric field : Guy Mamou-Mani (CEO de Syntec Numérique), Bertin Nahum (Founder and CEO of Medtech), Pierre-Noel Luiggi (Founder of Oscaro.com), and many more",
+			"img": "images/TDN.png",
+			"altimg": "TEXTImage"
+			
+		},
+		{
+			"type": "6",
+			"title": "Launch of the website  UNMYOTE !",
 			"date": "date ici2",
-			"body": "ici2 text",
-			"img": "images/banner2.jpg",
+			"body": "Opening of the UNMYOTE's website that can allowed you stay in touch with us  with our account on the different Social Network and with our article and news.",
+			"img": "images/website.jpg",
+			"altimg": "TEXTImage"
+		},
+		{
+			"type": "6",
+			"title": "Armhand arriving !!!",
+			"date": "July 2015", 
+			"body": "2 MYO's armhand are arrived and now we can start the test",
+			"img": "images/myo.jpg",
 			"altimg": "TEXTImage"
 		}]
 	},
@@ -77,7 +105,9 @@
 			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
 			"img": "images/media.jpg",
 			"altimg": "TEXTImage",
-			"video" :"L7zTyFp0Ftg"
+			"video" :"L7zTyFp0Ftg",
+			"download" : "uri",
+			"downloadname": "name"
 		},
 		{
 			"type": "1",

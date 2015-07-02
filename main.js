@@ -37,38 +37,43 @@
     	createCookie(name,"",-1);
     }
     lang_button = document.getElementById("lang_value");
-    lang_button.onclick = function(){
-    	if(lang_button != null){
-        	if(lang_button.value =="fr"){
-        		createCookie("lang","fr",365)
-        		changeLang("fr");
-        		this.value = "en";
-        		var img_button = document.getElementById("image_drapeau");
-        		img_button.src="./images/drapeau_anglais.jpg";
-        		img_button.alt ="english_flag";
-        	}else{
-        		createCookie("lang","en",365)
-        		changeLang("en");
-        		this.value ="fr";
-        		var img_button = document.getElementById("image_drapeau");
-        		img_button.src="./images/drapeau_france.jpg";
-        		img_button.alt="french_flag";
-        	}
+    if(lang_button != null){
+    	lang_button.onclick = function(){
+        	if(lang_button != null){
+            	if(lang_button.value =="fr"){
+            		createCookie("lang","fr",365)
+            		changeLang("fr");
+            		this.value = "en";
+            		var img_button = document.getElementById("image_drapeau");
+            		img_button.src="./images/drapeau_anglais.jpg";
+            		img_button.alt ="english_flag";
+            	}else{
+            		createCookie("lang","en",365)
+            		changeLang("en");
+            		this.value ="fr";
+            		var img_button = document.getElementById("image_drapeau");
+            		img_button.src="./images/drapeau_france.jpg";
+            		img_button.alt="french_flag";
+            	}
+            }
         }
     }
     
     
     var lang_value = readCookie("lang")
     if(lang_value != null){
-    	lang_button.value = lang_value;
-        changeLang(lang_value)
-        if(lang_value == "fr"){
-        	var img_button = document.getElementById("image_drapeau");
-    		img_button.src="./images/drapeau_anglais.jpg";
-        }else{
-        	var img_button = document.getElementById("image_drapeau");
-    		img_button.src="./images/drapeau_france.jpg";
-        }
+    	lang_button = document.getElementById("lang_value");
+    	if(lang_button != null){
+    		lang_button.value = lang_value;
+            changeLang(lang_value)
+            if(lang_value == "fr"){
+            	var img_button = document.getElementById("image_drapeau");
+        		img_button.src="./images/drapeau_anglais.jpg";
+            }else{
+            	var img_button = document.getElementById("image_drapeau");
+        		img_button.src="./images/drapeau_france.jpg";
+            }
+    	}
     }else{
     	lang_button = document.getElementById("lang_value")
     	lang_button.value = "en";
@@ -94,25 +99,35 @@
 	 	}
 	 	
 	 	var historyText = document.getElementById("history");
-	 	historyText.innerText = text.ourhistory;
+	 	if(historyText != null)
+	 		historyText.innerText = text.ourhistory;
 	 	
 	 	var partenerText = document.getElementById("partener");
-	 	partenerText.innerText = text.Someofourpartener
+	 	if(partenerText != null)
+	 		partenerText.innerText = text.Someofourpartener
+	 	
+	 		
 	 	
 	 	var slide_text = document.querySelectorAll(".text_slide");
 	 	var slide_button = document.querySelectorAll(".button_start");
 	 	var sendaquote = document.querySelectorAll(".sendaquote");
-	 	for(var i =0; i<slide_text.length; i++){
-	 		slide_text[i].innerText = text.slidingtext[i];
-	 		slide_button[i].innerText = text.slidingbutton;
-	 		sendaquote[i].innerText = text.sendaquote;
+	 	
+	 	if(slide_text != null && slide_button  != null && sendaquote != null ){
+	 		for(var i =0; i<slide_text.length; i++){
+		 		slide_text[i].innerText = text.slidingtext[i];
+		 		slide_button[i].innerText = text.slidingbutton;
+		 		sendaquote[i].innerText = text.sendaquote;
+		 	}
 	 	}
+	 	
     	
     	// Traitement About EN
 	 	data_element_text = document.getElementById("about_text");
-    	while(data_element_text.firstChild != null){
-    		data_element_text.removeChild(data_element_text.firstChild)
-    	}
+	 	if(data_element_text != null){
+	 		while(data_element_text.firstChild != null){
+	    		data_element_text.removeChild(data_element_text.firstChild)
+	    	}
+	 	}
     	title = document.createElement("h3");
     	title.innerText = text.aboutus;
     	link_about = document.createElement("a");
@@ -127,9 +142,11 @@
         
         // Traitement Approach
         data_element_text = document.getElementById("approach_text");
-        while(data_element_text.firstChild != null){
-    		data_element_text.removeChild(data_element_text.firstChild)
-    	}
+        if(data_element_text != null){
+	        while(data_element_text.firstChild != null){
+	    		data_element_text.removeChild(data_element_text.firstChild)
+	    	}
+        }
         title = document.createElement("h3");
         title.innerText = text.ourapproach;
         data_element_text = document.getElementById("approach_text");
@@ -255,17 +272,33 @@
         		BodyVideo.classList.add("embed-responsive-4by3");
         		var iframeVideo = document.createElement("iframe");
         		iframeVideo.classList.add("embed-responsive-item");
-
-        		//iframeVideo.classList.add("embed-responsive");
-        		
-
-        		//iframeVideo.classList.add("embed-responsive-4by3");
         		var src = "//www.youtube.com/embed/" + text.timeline[i].video +"?autoplay=0"
         		iframeVideo.setAttribute("src",src);
         		
         		
         		BodyVideo.appendChild(iframeVideo);
         		divBody.appendChild(BodyVideo);
+        	}
+        	if(text.timeline[i].download != undefined){
+        		
+        		var Bodydownload = document.createElement("a");
+        		Bodydownload.classList.add("btn");
+        		Bodydownload.classList.add("btn-lg");
+        		Bodydownload.classList.add("btn-primary");
+        		
+        		var span = document.createElement("span");
+        		span.classList.add("glyphicon");
+        		span.classList.add("glyphicon-download-alt");
+        		Bodydownload.setAttribute("src",text.timeline[i].download);
+        		if(text.timeline[i].downloadname != undefined){
+        			Bodydownload.setAttribute("download",text.timeline[i].downloadname);
+        		}
+        		Bodydownload.appendChild(span);
+        		span.innerText = " Download"
+ //       		Bodydownload.innerText = "Download"
+        		
+        		divBody.appendChild(Bodydownload);
+        		//<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Download</a>
         	}
         	
         	
