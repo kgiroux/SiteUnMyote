@@ -135,11 +135,14 @@
         link_about.setAttribute("target","_blank")
         link_about.innerText = text.linkabout;
         data_element_text = document.getElementById("about_text");
-        text_data = document.createElement("p");
-        text_data.innerText = text.about;
-        data_element_text.appendChild(title);
-        data_element_text.appendChild(text_data);
-        data_element_text.appendChild(link_about);
+        if(data_element_text != null){
+        	text_data = document.createElement("p");
+            text_data.innerText = text.about;
+            data_element_text.appendChild(title);
+            data_element_text.appendChild(text_data);
+            data_element_text.appendChild(link_about);
+        }
+        
         
         // Traitement Approach
         data_element_text = document.getElementById("approach_text");
@@ -151,11 +154,12 @@
         title = document.createElement("h3");
         title.innerText = text.ourapproach;
         data_element_text = document.getElementById("approach_text");
-        text_data = document.createElement("p");
-        text_data.innerText = text.approach;
-        data_element_text.appendChild(title);
-        data_element_text.appendChild(text_data);
-        
+        if(data_element_text != null){
+	        text_data = document.createElement("p");
+	        text_data.innerText = text.approach;
+	        data_element_text.appendChild(title);
+	        data_element_text.appendChild(text_data);
+        }
         //Traitement think 
         data_element_text = document.getElementById("think");
         data_element_text.innerText = text.think;
