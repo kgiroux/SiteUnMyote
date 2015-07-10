@@ -132,6 +132,7 @@
     	title.innerText = text.aboutus;
     	link_about = document.createElement("a");
         link_about.setAttribute("href","https://www.thalmic.com/en/myo/");
+        link_about.setAttribute("target","_blank")
         link_about.innerText = text.linkabout;
         data_element_text = document.getElementById("about_text");
         text_data = document.createElement("p");
