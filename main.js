@@ -258,7 +258,7 @@
         	pBody.innerText  = text.timeline[i].body;
         	divBody.appendChild(pBody);
         	
-        	if(text.timeline[i].img != undefined){
+        	if(text.timeline[i].img != undefined && text.timeline[i].img != ""){
         		var BodyImage = document.createElement("img");
             	BodyImage.setAttribute("src",text.timeline[i].img)
             	BodyImage.setAttribute("alt",text.timeline[i].altimg);
@@ -266,7 +266,7 @@
             	divBody.appendChild(BodyImage);
         	}
         	
-        	if(text.timeline[i].video != undefined){
+        	if(text.timeline[i].video != undefined && text.timeline[i].video != ""){
         		var BodyVideo = document.createElement("div");
         		BodyVideo.classList.add("embed-responsive");
         		BodyVideo.classList.add("embed-responsive-4by3");
@@ -279,7 +279,7 @@
         		BodyVideo.appendChild(iframeVideo);
         		divBody.appendChild(BodyVideo);
         	}
-        	if(text.timeline[i].download != undefined){
+        	if(text.timeline[i].download != undefined && text.timeline[i].download != ""){
         		
         		var Bodydownload = document.createElement("a");
         		Bodydownload.classList.add("btn");

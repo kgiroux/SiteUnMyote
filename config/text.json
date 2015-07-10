@@ -37,9 +37,9 @@
 			"body": "Pubilishing in two newspapers (Le Paris-Normandie, L'Impartiale) and interview for three radio (France Inter, France Bleue Haute-Normandie, Radio Cristal) about the UNMYOTE's project !",
 			"img": "images/media.jpg",
 			"altimg": "TEXTImage",
-			"video" :"L7zTyFp0Ftg",
-			"download" : "uri",
-			"downloadname": "name"
+			"video" :"",
+			"download" : "",
+			"downloadname": ""
 		},
 		{
 			"type": "1",
@@ -105,9 +105,9 @@
 			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
 			"img": "images/media.jpg",
 			"altimg": "TEXTImage",
-			"video" :"L7zTyFp0Ftg",
-			"download" : "uri",
-			"downloadname": "name"
+			"video" :"",
+			"download" : "",
+			"downloadname": ""
 		},
 		{
 			"type": "1",
