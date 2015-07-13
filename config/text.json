@@ -23,6 +23,7 @@
 		"Someofourpartener":"Our Parteners",
 		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
 		"timeline": [{
+			"id" : "timeline1",
 			"type": "1",
 			"title": "Birth",
 			"date": "April 2015",
@@ -31,6 +32,7 @@
 			"altimg": "TEXTImage"
 		},
 		{
+			"id" : "timeline2",
 			"type": "1",
 			"title": "Advertissement",
 			"date": "April-May 2015",
@@ -42,6 +44,7 @@
 			"downloadname": ""
 		},
 		{
+			"id" : "timeline3",
 			"type": "1",
 			"title": "Talents du numérique",
 			"date": "21 mai 2015",
@@ -51,6 +54,7 @@
 			
 		},
 		{
+			"id" : "timeline4",
 			"type": "6",
 			"title": "Launch of the website  UNMYOTE !",
 			"date": "date ici2",
@@ -59,6 +63,7 @@
 			"altimg": "TEXTImage"
 		},
 		{
+			"id" : "timeline5",
 			"type": "6",
 			"title": "Armhand arriving !!!",
 			"date": "July 2015", 
@@ -91,6 +96,7 @@
 		"Someofourpartener":"Nos Partenaires",
 		"think": "",
 		"timeline": [{
+			"id" : "timeline1",
 			"type": "1",
 			"title": "Naissance",
 			"date": "Avril 2015",
@@ -99,17 +105,19 @@
 			"altimg": "TEXTImage"
 		},
 		{
+			"id" : "timeline2",
 			"type": "1",
 			"title": "Publicité",
 			"date": "Avril-Mai 2015",
 			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
 			"img": "images/media.jpg",
 			"altimg": "TEXTImage",
-			"video" :"",
+			"video" :"L7zTyFp0Ftg",
 			"download" : "",
 			"downloadname": ""
 		},
 		{
+			"id" : "timeline3",
 			"type": "1",
 			"title": "Talents du numérique",
 			"date": "21 mai 2015",
@@ -119,6 +127,7 @@
 			
 		},
 		{
+			"id" : "timeline4",
 			"type": "6",
 			"title": "Lancement du site UNMYOTE !",
 			"date": "date ici2",
@@ -127,6 +136,7 @@
 			"altimg": "TEXTImage"
 		},
 		{
+			"id" : "timeline6",
 			"type": "6",
 			"title": "Reception des bracelets !",
 			"date": "Juillet 2015",

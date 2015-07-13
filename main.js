@@ -174,16 +174,174 @@
     
     function changeTimeLine(){
     	
+    	/*
+    	 * <ul id="dates">
+			<li><a href="#1900">1900</a></li>
+			<li><a href="#1930">1930</a></li>
+			<li><a href="#1944">1944</a></li>
+			<li><a href="#1950">1950</a></li>
+			<li><a href="#1971">1971</a></li>
+			<li><a href="#1977">1977</a></li>
+			<li><a href="#1989">1989</a></li>
+			<li><a href="#1999">1999</a></li>
+			<li><a href="#2001">2001</a></li>
+			<li><a href="#2011">2011</a></li>
+		</ul>
+		<ul id="issues">
+			<li id="1900">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1900</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1930">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1930</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1944">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1944</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1950">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1950</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1971">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1971</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1977">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1977</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1989">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1989</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="1999">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>1999</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="2001">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>2001</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+			<li id="2011">
+				<img src="images/media.png" width="256" height="256" />
+				<h1>2011</h1>
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+			</li>
+		</ul>
+		<div id="grad_left"></div>
+		<div id="grad_right"></div>
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+    	 * 
+    	 * 
+    	 * 
+    	 */
+    	
+    	
     	
     	
     	console.log(text);
-    	var ul = document.getElementById("timelineId");
     	
-    	while(ul.firstChild != null){
-    		ul.removeChild(ul.firstChild)
+    	var ulDates = document.getElementById("dates")
+    	while(ulDates.firstChild != null){
+    		ulDates.removeChild(ulDates.firstChild)
     	}
     	
     	for(var i = 0; i<text.timeline.length; i++){
+    		var liDates = document.createElement("li");
+    		var aDates = document.createElement("a");
+    		
+    		aDates.setAttribute("href","#"+text.timeline[i].id);
+    		aDates.innerText = text.timeline[i].date;
+    		liDates.appendChild(aDates);
+    		ulDates.appendChild(liDates);
+    	}
+    	
+    	
+    	var ulIssues = document.getElementById("issues")
+    	while(ulIssues.firstChild != null){
+    		ulIssues.removeChild(ulIssues.firstChild)
+    	}
+    	
+    	for(var i = 0; i<text.timeline.length; i++){
+    		var liIssues = document.createElement("li");
+    		liIssues.setAttribute("id",text.timeline[i].id)
+    		var BodyImage = document.createElement("img") ;
+    		var BodyVideo = document.createElement("div");
+    		var divRow = document.createElement("div");
+    		divRow.classList.add("row");
+    		var col1 = document.createElement("div")
+    		col1.classList.add("col-lg-1")
+    		var colend = document.createElement("div")
+    		colend.classList.add("col-lg-1")
+    		var col = document.createElement("div");
+    		col.classList.add("col-lg-6");
+    		
+    		
+    		
+    		if(text.timeline[i].img != undefined && text.timeline[i].img != ""){
+            	BodyImage.setAttribute("src",text.timeline[i].img)
+            	BodyImage.setAttribute("width","256")
+            	BodyImage.setAttribute("height","256")
+            	
+            	BodyImage.setAttribute("alt",text.timeline[i].altimg);
+            	BodyImage.classList.add("img-responsive");
+            	
+        	}
+        	if(text.timeline[i].video != undefined && text.timeline[i].video != ""){
+        		BodyVideo.classList.add("embed-responsive");
+        		BodyVideo.classList.add("embed-responsive-4by3");
+        		var iframeVideo = document.createElement("iframe");
+        		iframeVideo.classList.add("embed-responsive-item");
+        		var src = "//www.youtube.com/embed/" + text.timeline[i].video +"?autoplay=0"
+        		iframeVideo.setAttribute("src",src);
+        		BodyVideo.appendChild(iframeVideo)
+        	}
+    		if(BodyVideo.hasChildNodes())
+    			col.appendChild(BodyVideo);
+    		else if(BodyImage.src != null)
+    			col.appendChild(BodyImage);
+        	
+    		var Htitle = document.createElement("h1");
+    		Htitle.innerText = text.timeline[i].date
+    		
+    		liIssues.appendChild(Htitle)
+        	var col2 = document.createElement("div");
+    		col2.classList.add("col-lg-4");
+    		var pBody = document.createElement("p");
+        	pBody.innerText  = text.timeline[i].body;
+        	col2.appendChild(pBody);
+        	
+        	
+        	divRow.appendChild(col1);
+        	if(col.hasChildNodes)
+        		divRow.appendChild(col);
+        	divRow.appendChild(col2);
+        	divRow.appendChild(colend);
+    		liIssues.appendChild(divRow)
+        	ulIssues.appendChild(liIssues);
+    	}
+    	/*<li id="1900">
+		<img src="images/media.png" width="256" height="256" />
+		<h1>1900</h1>
+		<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+	</li>*/
+    	
+    	for(var i = 0; i<text.timeline.length; i++){
+    		
+    		
+    		
         	var li = document.createElement("li");
         	if(i%2==1)
         		li.classList.add("timeline-inverted");
@@ -307,16 +465,15 @@
         	}
         	
         	
+        	$().timelinr({
+				arrowKeys: 'true'
+			})
         	
-        	
-        	divPanel.appendChild(divheader);
+        	/*divPanel.appendChild(divheader);
         	divPanel.appendChild(divBody);
         	
         	li.appendChild(divBadge);
-        	li.appendChild(divPanel);
-        	
-        	
-        	ul.appendChild(li);
+        	li.appendChild(divPanel);*/
     	}
     }
 });
