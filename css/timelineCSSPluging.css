@@ -42,7 +42,7 @@ h1,h2,h4,h5,h6 {
 }
 
 	#timeline {
-		width: 50%;
+		width: 70%;
 		/*height: 350px;*/
 		overflow: hidden;
 		margin: 100px auto;
@@ -65,8 +65,9 @@ h1,h2,h4,h5,h6 {
 			}
 				#dates a {
 					width :100%; 
-					line-height: 1.5em;
+					line-height: 0.9em;
 					padding-bottom: 10px;
+					font-size : 0.9em;
 				}
 				#dates .selected {
 			        font-size: 0.9em;

@@ -95,16 +95,16 @@
     	// Changement texte menu
 	 	var menu_item = document.querySelectorAll(".menu_class");
 	 	for(var i = 0; i<menu_item.length; i++){
-	 		menu_item[i].innerText = text.menu[i];
+	 		menu_item[i].textContent = text.menu[i];
 	 	}
 	 	
 	 	var historyText = document.getElementById("history");
 	 	if(historyText != null)
-	 		historyText.innerText = text.ourhistory;
+	 		historyText.textContent = text.ourhistory;
 	 	
 	 	var partenerText = document.getElementById("partener");
 	 	if(partenerText != null)
-	 		partenerText.innerText = text.Someofourpartener
+	 		partenerText.textContent = text.Someofourpartener
 	 	
 	 		
 	 	
@@ -114,9 +114,9 @@
 	 	
 	 	if(slide_text != null && slide_button  != null && sendaquote != null ){
 	 		for(var i =0; i<slide_text.length; i++){
-		 		slide_text[i].innerText = text.slidingtext[i];
-		 		slide_button[i].innerText = text.slidingbutton;
-		 		sendaquote[i].innerText = text.sendaquote;
+		 		slide_text[i].textContent = text.slidingtext[i];
+		 		slide_button[i].textContent = text.slidingbutton;
+		 		sendaquote[i].textContent = text.sendaquote;
 		 	}
 	 	}
 	 	
@@ -129,15 +129,15 @@
 	    	}
 	 	}
     	title = document.createElement("h3");
-    	title.innerText = text.aboutus;
+    	title.textContent = text.aboutus;
     	link_about = document.createElement("a");
         link_about.setAttribute("href","https://www.thalmic.com/en/myo/");
         link_about.setAttribute("target","_blank")
-        link_about.innerText = text.linkabout;
+        link_about.textContent = text.linkabout;
         data_element_text = document.getElementById("about_text");
         if(data_element_text != null){
         	text_data = document.createElement("p");
-            text_data.innerText = text.about;
+            text_data.textContent = text.about;
             data_element_text.appendChild(title);
             data_element_text.appendChild(text_data);
             data_element_text.appendChild(link_about);
@@ -152,107 +152,27 @@
 	    	}
         }
         title = document.createElement("h3");
-        title.innerText = text.ourapproach;
+        title.textContent = text.ourapproach;
         data_element_text = document.getElementById("approach_text");
         if(data_element_text != null){
 	        text_data = document.createElement("p");
-	        text_data.innerText = text.approach;
+	        text_data.textContent = text.approach;
 	        data_element_text.appendChild(title);
 	        data_element_text.appendChild(text_data);
         }
         //Traitement think 
         data_element_text = document.getElementById("think");
-        data_element_text.innerText = text.think;
+        data_element_text.textContent = text.think;
         
       //Traitement message 
         data_element_text = document.getElementById("message");
-        data_element_text.innerText = text.message;
+        data_element_text.textContent = text.message;
     
         changeTimeLine();
     }
     
     
     function changeTimeLine(){
-    	
-    	/*
-    	 * <ul id="dates">
-			<li><a href="#1900">1900</a></li>
-			<li><a href="#1930">1930</a></li>
-			<li><a href="#1944">1944</a></li>
-			<li><a href="#1950">1950</a></li>
-			<li><a href="#1971">1971</a></li>
-			<li><a href="#1977">1977</a></li>
-			<li><a href="#1989">1989</a></li>
-			<li><a href="#1999">1999</a></li>
-			<li><a href="#2001">2001</a></li>
-			<li><a href="#2011">2011</a></li>
-		</ul>
-		<ul id="issues">
-			<li id="1900">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1900</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1930">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1930</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1944">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1944</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1950">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1950</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1971">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1971</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1977">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1977</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1989">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1989</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="1999">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>1999</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="2001">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>2001</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-			<li id="2011">
-				<img src="images/media.png" width="256" height="256" />
-				<h1>2011</h1>
-				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-			</li>
-		</ul>
-		<div id="grad_left"></div>
-		<div id="grad_right"></div>
-		<a href="#" id="next">+</a>
-		<a href="#" id="prev">-</a>
-    	 * 
-    	 * 
-    	 * 
-    	 */
-    	
-    	
-    	
-    	
-    	console.log(text);
-    	
     	var ulDates = document.getElementById("dates")
     	while(ulDates.firstChild != null){
     		ulDates.removeChild(ulDates.firstChild)
@@ -263,7 +183,7 @@
     		var aDates = document.createElement("a");
     		
     		aDates.setAttribute("href","#"+text.timeline[i].id);
-    		aDates.innerText = text.timeline[i].date;
+    		aDates.textContent = text.timeline[i].date;
     		liDates.appendChild(aDates);
     		ulDates.appendChild(liDates);
     	}
@@ -309,13 +229,14 @@
     			col.appendChild(BodyImage);
         	
     		var Htitle = document.createElement("h1");
-    		Htitle.innerText = text.timeline[i].date
+    		Htitle.textContent = text.timeline[i].date
     		
     		liIssues.appendChild(Htitle)
         	var col2 = document.createElement("div");
-    		col2.classList.add("col-lg-4");
+    		col2.classList.add("col-lg-5");
     		var pBody = document.createElement("p");
-        	pBody.innerText  = text.timeline[i].body;
+    		pBody.classList.add("text-justify");
+        	pBody.textContent  = text.timeline[i].body;
         	col2.appendChild(pBody);
         	divRow.appendChild(col1);
         	if(col.hasChildNodes)
