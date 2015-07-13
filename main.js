@@ -287,17 +287,12 @@
     		colend.classList.add("col-lg-1")
     		var col = document.createElement("div");
     		col.classList.add("col-lg-6");
-    		
-    		
-    		
     		if(text.timeline[i].img != undefined && text.timeline[i].img != ""){
             	BodyImage.setAttribute("src",text.timeline[i].img)
             	BodyImage.setAttribute("width","256")
             	BodyImage.setAttribute("height","256")
-            	
             	BodyImage.setAttribute("alt",text.timeline[i].altimg);
             	BodyImage.classList.add("img-responsive");
-            	
         	}
         	if(text.timeline[i].video != undefined && text.timeline[i].video != ""){
         		BodyVideo.classList.add("embed-responsive");
@@ -322,8 +317,6 @@
     		var pBody = document.createElement("p");
         	pBody.innerText  = text.timeline[i].body;
         	col2.appendChild(pBody);
-        	
-        	
         	divRow.appendChild(col1);
         	if(col.hasChildNodes)
         		divRow.appendChild(col);
@@ -331,149 +324,9 @@
         	divRow.appendChild(colend);
     		liIssues.appendChild(divRow)
         	ulIssues.appendChild(liIssues);
-    	}
-    	/*<li id="1900">
-		<img src="images/media.png" width="256" height="256" />
-		<h1>1900</h1>
-		<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-	</li>*/
-    	
-    	for(var i = 0; i<text.timeline.length; i++){
-    		
-    		
-    		
-        	var li = document.createElement("li");
-        	if(i%2==1)
-        		li.classList.add("timeline-inverted");
-        	/* Badge */
-        	var divBadge = document.createElement("div");
-        	divBadge.classList.add("timeline-badge");
-        	var iImage = document.createElement("i");
-        	iImage.classList.add("fa");
-        	console.log(text.timeline[i].type);	
-        	switch(text.timeline[i].type){
-        	case "1" :
-        		// NewsPaper symbole
-        		iImage.classList.add("fa-newspaper-o");
-        		break;
-        	case "2" : 
-        		// Check symbole
-        		iImage.classList.add("fa-check");
-        		break;
-        	case "3" : 
-        		// CARD symbole
-        		iImage.classList.add("fa-cc-mastercard");
-        		break;
-        	case "4" : 
-        		//Android
-        		iImage.classList.add("fa-android");
-        		break;
-        	case "5" : 
-        		//Android
-        		iImage.classList.add("fa-apple");
-        		break;
-        	case "6" : 
-        		//Android
-        		iImage.classList.add("fa-windows");
-        		break;
-        	case "7" : 
-        		//Android
-        		iImage.classList.add("fa-youtube");
-        		break;
-        	case "8" : 
-        		//Android
-        		iImage.classList.add("fa-twitter-square");
-        		break;
-        	case "9" : 
-        		//Android
-        		iImage.classList.add("fa-facebook-square");
-        		break;
-        	}
-        	divBadge.appendChild(iImage);
-        	
-        	
-        	var divPanel = document.createElement("div")
-        	divPanel.classList.add("timeline-panel");
-        	var divheader = document.createElement("div");
-        	divheader.classList.add("timeline-heading")
-        	var h4title = document.createElement("h4");
-        	h4title.classList.add("timeline-title");		
-        	h4title.innerText = text.timeline[i].title
-        	
-        	var pTime = document.createElement("p");
-        	/* Header Time Line */
-        	var smallTime = document.createElement("small");
-        	smallTime.classList.add("text-muted");
-        	var iTime = document.createElement("i");
-        	iTime.classList.add("fa");
-        	iTime.classList.add("fa-clock-o");
-        	smallTime.appendChild(iTime);
-        	smallTime.innerText = text.timeline[i].date;
-        	pTime.appendChild(smallTime);
-        	divheader.appendChild(h4title);
-        	divheader.appendChild(pTime);
-        	
-        	/* Body TimeLine*/
-        	var divBody = document.createElement("div");
-        	divBody.classList.add("timeline-body");
-        	
-        	var pBody = document.createElement("p");
-        	pBody.innerText  = text.timeline[i].body;
-        	divBody.appendChild(pBody);
-        	
-        	if(text.timeline[i].img != undefined && text.timeline[i].img != ""){
-        		var BodyImage = document.createElement("img");
-            	BodyImage.setAttribute("src",text.timeline[i].img)
-            	BodyImage.setAttribute("alt",text.timeline[i].altimg);
-            	BodyImage.classList.add("img-responsive");
-            	divBody.appendChild(BodyImage);
-        	}
-        	
-        	if(text.timeline[i].video != undefined && text.timeline[i].video != ""){
-        		var BodyVideo = document.createElement("div");
-        		BodyVideo.classList.add("embed-responsive");
-        		BodyVideo.classList.add("embed-responsive-4by3");
-        		var iframeVideo = document.createElement("iframe");
-        		iframeVideo.classList.add("embed-responsive-item");
-        		var src = "//www.youtube.com/embed/" + text.timeline[i].video +"?autoplay=0"
-        		iframeVideo.setAttribute("src",src);
-        		
-        		
-        		BodyVideo.appendChild(iframeVideo);
-        		divBody.appendChild(BodyVideo);
-        	}
-        	if(text.timeline[i].download != undefined && text.timeline[i].download != ""){
-        		
-        		var Bodydownload = document.createElement("a");
-        		Bodydownload.classList.add("btn");
-        		Bodydownload.classList.add("btn-lg");
-        		Bodydownload.classList.add("btn-primary");
-        		
-        		var span = document.createElement("span");
-        		span.classList.add("glyphicon");
-        		span.classList.add("glyphicon-download-alt");
-        		Bodydownload.setAttribute("src",text.timeline[i].download);
-        		if(text.timeline[i].downloadname != undefined){
-        			Bodydownload.setAttribute("download",text.timeline[i].downloadname);
-        		}
-        		Bodydownload.appendChild(span);
-        		span.innerText = " Download"
- //       		Bodydownload.innerText = "Download"
-        		
-        		divBody.appendChild(Bodydownload);
-        		//<a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Download</a>
-        	}
-        	
-        	
         	$().timelinr({
 				arrowKeys: 'true'
 			})
-        	
-        	/*divPanel.appendChild(divheader);
-        	divPanel.appendChild(divBody);
-        	
-        	li.appendChild(divBadge);
-        	li.appendChild(divPanel);*/
     	}
     }
 });
