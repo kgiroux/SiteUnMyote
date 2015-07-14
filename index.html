@@ -8,11 +8,11 @@
 <meta name="keywords" content="UNMYOTE template" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+
 <!--// bootstrap-css -->
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// css -->
 <!-- js -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -46,34 +46,44 @@
 <body>
 <data-lang lang="en"/>
 <!--header-->
-<div class="header">
-	<div class="container">
-		<div class="header-left">
-			<a href="index.html"><img src="./images/LogoUnMyote.png" alt=""/></a>
+<nav class="navbar navbar-inverse">		
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	     <a class="" href="index.html">
+	    		<img class="logo" src="./images/LogoUnMyoteHeader.png" alt=""/>
+	 	  </a>
+	 	  
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	     </div>
+	    
+		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			<ul class="nav1 nav navbar-nav">
+				<li><a class="scroll active menu_class" href="#home">HOME</a></li>
+				<li><a class="scroll menu_class" href="#about">ABOUT</a></li>	
+				<li><a class="scroll menu_class" href="#approach">OUR  APPROACH</a></li>
+				<li><a class="scroll menu_class history" href="#ourhistory">HISTORY</a></li>
+				<li><a class="menu_class" href="./founder.html">FOUNDER</a></li>
+				<li><a id="lang_value" value="en"><img id="image_drapeau" src="./images/drapeau_france.jpg" alt="drapeau_france"></a>
+			</ul>
+		<!-- script for menu -->
+			<script> 
+				$( "span.menu" ).click(function() {
+				$( "ul.nav1" ).slideToggle( 300, function() {
+				 // Animation complete.
+				});
+				});
+			</script>
+		<!-- //script for menu -->
 		</div>
-		<div class="header-right">
-			<span class="menu">MENU</span>
-					<ul class="nav1">
-						<li><a class="scroll active menu_class" href="#home">HOME</a></li>
-						<li><a class="scroll menu_class" href="#about">ABOUT</a></li>	
-						<li><a class="scroll menu_class" href="#approach">OUR  APPROACH</a></li>
-						<li><a class="scroll menu_class" href="#ourhistory">HISTORY</a></li>
-						<li><a class="menu_class" href="./founder.html">FOUNDER</a></li>
-						<li><a id="lang_value" value="en"><img id="image_drapeau" src="./images/drapeau_france.jpg" alt="drapeau_france"></a>
-					</ul>
-				<!-- script for menu -->
-					<script> 
-						$( "span.menu" ).click(function() {
-						$( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						});
-						});
-					</script>
-				<!-- //script for menu -->
-		</div>
-		<div class="clearfix"></div>
 	</div>
-</div>
+</nav>
+		<div class="clearfix"></div>
 <!--//header-->
 <!--banner-->
 <div id="home" class="banner movetofront">
@@ -175,12 +185,12 @@
 <!--about-->
 <div id="about" class="about">
 	<div class="about-grids">
+		<div class="about-right">
+			<img src="images/myo.jpg" alt=""/>
+		</div>
 		<div class="about-left">
 			<div class="about-info" id="about_text">
 			</div>
-		</div>
-		<div class="about-right">
-			<img src="images/myo.jpg" alt=""/>
 		</div>
 		<div class="clearfix"></div>
 	</div>
