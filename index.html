@@ -11,9 +11,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// bootstrap-css -->
 <!-- css -->
-<link rel="stylesheet" href="css/timelineCSSPluging.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/timeline.css" type="text/css" media="all" />
 
 <!--// css -->
 <!-- js -->
@@ -65,7 +63,7 @@
 						<li><a class="scroll active menu_class" href="#home">HOME</a></li>
 						<li><a class="scroll menu_class" href="#about">ABOUT</a></li>	
 						<li><a class="scroll menu_class" href="#approach">OUR  APPROACH</a></li>
-						<li><a class="scroll menu_class" href="#timelineTitle">HISTORY</a></li>
+						<li><a class="scroll menu_class" href="#ourhistory">HISTORY</a></li>
 						<li><a class="menu_class" href="./founder.html">FOUNDER</a></li>
 						<li><a id="lang_value" value="en"><img id="image_drapeau" src="./images/drapeau_france.jpg" alt="drapeau_france"></a>
 					</ul>
@@ -84,95 +82,104 @@
 </div>
 <!--//header-->
 <!--banner-->
-<div id="home" class="banner movetofront">
+<div id="home" class="banner">
 	<div id="video-bg" class="banner"></div>
-	<script type="text/javascript">
-		var tag = document.createElement('script');
-	    tag.src = "http://www.youtube.com/player_api";
-	    var firstScriptTag = document.getElementsByTagName('script')[0];
-	    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-	
-	    // 3. This function creates an <iframe> (and YouTube player)
-	    //    after the API code downloads.
-	    var player;
-	    function onYouTubePlayerAPIReady() {
-	      player = new YT.Player('video-bg', {
-	        playerVars: { 'autoplay': 1, 'controls': 0,'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
-	        videoId: 'oWu9TFJjHaM',
-	        events: {
-	          'onReady': onPlayerReady}
-	      });
-	    }
-	
-	    // 4. The API will call this function when the video player is ready.
-	    function onPlayerReady(event) {
-	      event.target.mute();
-	    }
-    </script>
-	<div class="container">
-
-		<!-- responsiveslides -->
-		<script src="./js/responsiveslides.min.js"></script>
-			<script>
-				// You can also use "$(window).load(function() {"
-				$(function () {
-				 // Slideshow 4
-				$("#slider3").responsiveSlides({
-					auto: true,
-					pager: true,
-					nav: false,
-					speed: 500,
-					namespace: "callbacks",
-					before: function () {
-				$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
-					}
-					});
-					});
-		</script>
-		<!-- responsiveslides -->
-		<div  id="top" class="callbacks_container">
-			<ul class="rslides" id="slider3">
-				<li>
-					<div class="banner-info text-center">
-						<h1>UNMYOTE</h1>
-						<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
-						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
-								<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-						</div>
+		<script type="text/javascript">
+			var tag = document.createElement('script');
+		    tag.src = "http://www.youtube.com/player_api";
+		    var firstScriptTag = document.getElementsByTagName('script')[0];
+		    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		
+		    // 3. This function creates an <iframe> (and YouTube player)
+		    //    after the API code downloads.
+		    var player;
+		    function onYouTubePlayerAPIReady() {
+		      player = new YT.Player('video-bg', {
+		        playerVars: { 'autoplay': 1, 'controls': 0,'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
+		        videoId: 'oWu9TFJjHaM',
+		        events: {
+		          'onReady': onPlayerReady}
+		      });
+		    }
+		
+		    // 4. The API will call this function when the video player is ready.
+		    function onPlayerReady(event) {
+		      event.target.mute();
+		    }
+	    </script>
+	    
+		<div class="cadre">
+			<div class="movetofront">
+				<div class="container">	
+					<!-- responsiveslides -->
+					<script src="./js/responsiveslides.min.js"></script>
+						<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							 // Slideshow 4
+							$("#slider3").responsiveSlides({
+								auto: true,
+								pager: true,
+								nav: false,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+							$('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+								$('.events').append("<li>after event fired.</li>");
+								}
+								});
+								});
+					</script>
+					<!-- responsiveslides -->
+					<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="banner-info text-center">
+									<h1>UNMYOTE</h1>
+									<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
+									<div class="start">
+											<a class="scroll button_start" href="#about">START TOUR</a>
+											<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+									</div>
+								</div>
+								<br>
+							</li>
+							<li>
+								<div class="banner-info text-center">
+									<h1>UNMYOTE</h1>
+									<p class="text_slide" >SOFTWARE SOLUTION</p>
+									<div class="start">
+											<a class="scroll button_start" href="#about">START TOUR</a>
+											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+									</div>
+								</div>
+								<br>
+							</li>
+							<li>
+								<div class="banner-info text-center">
+									<h1>UNMYOTE </h1>
+									<p class="text_slide">POWERED BY MYO </p>
+									<div class="start">
+											<a class="scroll button_start" href="#about">START TOUR</a>
+											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+									</div>
+								</div>
+								<br>
+							</li>
+						</ul>
 					</div>
-					<br>
-				</li>
-				<li>
-					<div class="banner-info text-center">
-						<h1>UNMYOTE</h1>
-						<p class="text_slide" >SOFTWARE SOLUTION</p>
-						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
-								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-						</div>
-					</div>
-					<br>
-				</li>
-				<li>
-					<div class="banner-info text-center">
-						<h1>UNMYOTE </h1>
-						<p class="text_slide">POWERED BY MYO </p>
-						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
-								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-						</div>
-					</div>
-					<br>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 <!--//banner-->
+<div class="behind">
+	<div class="container">
+	</div>
+</div>
 <!--about-->
 <div id="about" class="about">
 	<div class="about-grids">
@@ -190,7 +197,6 @@
 <!--behind-->
 <div class="behind">
 	<div class="container">
-		<p id="message">“Behind every successful asset management software implementation is great content.”</p>
 	</div>
 </div>
 <!--//behind-->
@@ -207,24 +213,17 @@
 	</div>
 </div>
 <!--//approach-->
-<!--kick-->
-<div class="kick">
-	<div class="container">
-		<p id="think">“Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo”</p>
-	</div>
-</div>
-<!--//kick-->
 <!--services-->
-<div id="timelineTitle" class="timelines">
+<div class="behind">
 	<div class="container">
-		<h3 id="history">HISTORY</h3>
 	</div>
 </div>
-
 <!--TIME LINE-->
-<div class="panel panel-default timelines">
+<div class="panel timelines">
     <!-- /.panel-heading -->
     <div class="panel-body">
+    	<div id="ourhistory" class="ourhistory">
+    	</div>
 	    <div id="timeline">
 	    	<ul id="dates">
 			</ul>
@@ -251,17 +250,11 @@
 				<li>
 					<a href="https://www.esigelec.fr"><img src="./images/E.png" alt=""/></a>
 				</li>
-				<li>
-					<a href="https://www.thalmic.com"><img src="./images/TL.png" alt=""/></a>
-				</li>
-				<li>
-					<a href="https://www.esigelec.fr"><img src="./images/E.png" alt=""/></a>
-				</li>
 			</ul>
 			<script type="text/javascript">
 							$(window).load(function() {
 								$("#flexiselDemo1").flexisel({
-									visibleItems: 5,
+									visibleItems: 3,
 									animationSpeed: 1000,
 									autoPlay: true,
 									autoPlaySpeed: 3000,    		

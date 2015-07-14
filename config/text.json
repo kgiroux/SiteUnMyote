@@ -21,7 +21,6 @@
 		"ourhistory": "Our History",
 		"message": "Behind every successful asset management software implementation is great content.",
 		"Someofourpartener":"Our Parteners",
-		"think": "Kick start your reliability initiative with our equipment based Problem, Failure, Action Library. Contact us for a free demo",
 		"timeline": [{
 			"id" : "timeline1",
 			"type": "1",
@@ -83,7 +82,7 @@
 		"A PROPOS",
 		"APPROCHE",
 		"HISTOIRE","NOTRE EQUIPE"],
-		"slidingtext": ["UNE SOLUTION POUR LES PERSONNES SOUFFRANT DE MUTISME",
+		"slidingtext": ["POUR LES PERSONNES SOUFFRANT DE MUTISME",
 		"SOLUTION LOGICIEL",
 		"POWERED BY MYO"],
 		"slidingbutton": "COMMENCER",
@@ -94,7 +93,6 @@
 		"ourhistory": "Notre Histoire",
 		"message": "",
 		"Someofourpartener":"Nos Partenaires",
-		"think": "",
 		"timeline": [{
 			"id" : "timeline1",
 			"type": "1",
@@ -136,7 +134,7 @@
 			"altimg": "TEXTImage"
 		},
 		{
-			"id" : "timeline6",
+			"id" : "timeline5",
 			"type": "6",
 			"title": "Reception des bracelets !",
 			"date": "Juillet 2015",

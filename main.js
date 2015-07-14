@@ -160,19 +160,22 @@
 	        data_element_text.appendChild(title);
 	        data_element_text.appendChild(text_data);
         }
-        //Traitement think 
-        data_element_text = document.getElementById("think");
-        data_element_text.textContent = text.think;
-        
-      //Traitement message 
-        data_element_text = document.getElementById("message");
-        data_element_text.textContent = text.message;
     
         changeTimeLine();
     }
     
     
     function changeTimeLine(){
+    	data_element_text = document.getElementById("ourhistory");
+    	if(data_element_text != null){
+	 		while(data_element_text.firstChild != null){
+	    		data_element_text.removeChild(data_element_text.firstChild)
+	    	}
+	 	}
+    	title = document.createElement("h3");
+    	title.textContent = text.ourhistory;
+    	data_element_text.appendChild(title);
+    	
     	var ulDates = document.getElementById("dates")
     	while(ulDates.firstChild != null){
     		ulDates.removeChild(ulDates.firstChild)
@@ -229,7 +232,7 @@
     			col.appendChild(BodyImage);
         	
     		var Htitle = document.createElement("h1");
-    		Htitle.textContent = text.timeline[i].date
+    		Htitle.textContent = text.timeline[i].title
     		
     		liIssues.appendChild(Htitle)
         	var col2 = document.createElement("div");
