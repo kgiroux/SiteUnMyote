@@ -1556,11 +1556,18 @@ ul.nav1{
 	.about-info a ,.start a{
 	  padding: 5px 10px;
 	}
-	.about-info p {
+/* 	.about-info p {
 	  font-size: 0.813em;
 	  overflow: hidden;
 	  height: 44px;
 	  margin: 0 0 14px 0;
+	} */
+	
+	.about-info p {
+	  font-size: 0.813em;
+	  overflow: hidden;
+	  margin: 0 18px 18px 0;
+	  text-align: justify
 	}
 	.about-info {
 	  margin: 22px 0px 0 25px;
@@ -1578,14 +1585,28 @@ ul.nav1{
 	.services-grids {
 	  min-height: 260px;
 	}
+	
+	.behind p,.approach-right h3,.kick p,.services h3,.clients h3,.contact-info h3{
+	  font-size: 22px;
+	  margin : 0 18px 18px 18px
+	} 
 	.approach-right {
-	  padding: 22px 18px 0 0px;
+	  width: 100%;
+	  float : left;
+	  padding: 30px 30px 0 0px;
+	  }
+	.approach-right p {
+	  margin: 0 18px 18px 18px;
+	  font-size: 0.813em;
+	  text-align: justify
 	}
 	.approach-right p:nth-child(4) {
 	  display: none;
-	  }
-	.approach-right h3 {
-	  margin: 0 0 13px 0;
+	  height: 51px;
+	}
+	.approach-left{
+		width:100%;
+		float:left;
 	}
 	.kick p {
 	  width: 100%;
@@ -1643,8 +1664,15 @@ ul.nav1{
 	.contact-map {
 	  height: 190px;
 	}
-	.approach-right p {
-	  margin: 0 0 0px 0;
+	.logo{
+		content:url("../images/logo.png");
+		width : 50px;
+		height :50px;
+	}
+	.founder{
+	  width: 70%;
+  		margin-left: 16.66666667%;
+	
 	}
 }
 @media(max-width:320px){
@@ -1689,10 +1717,16 @@ ul.nav1{
 	.behind{
 	 padding: 30px 0;
 	}
-	.about-info p {
+	/* .about-info p {
   overflow: hidden;
   height: 75px;
-  }
+  } */
+  .about-info p {
+	  font-size: 0.813em;
+	  overflow: hidden;
+	  margin: 0 18px 18px 0;
+	  text-align: justify
+	}
 	.kick {
 	 padding: 30px 0 0 0;
 	}
