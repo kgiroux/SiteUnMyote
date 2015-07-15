@@ -145,6 +145,13 @@
         
         
         // Traitement Approach
+        var approach_pic = document.getElementById("principe_pic");
+        
+        if(approach_pic != undefined){
+        	approach_pic.setAttribute("src",text.approachPic)
+        }
+        
+        
         data_element_text = document.getElementById("approach_text");
         if(data_element_text != null){
 	        while(data_element_text.firstChild != null){
