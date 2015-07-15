@@ -61,11 +61,9 @@
     
     
     var lang_value = readCookie("lang")
-    console.log(lang_value)
     if(lang_value != null){
     	lang_button = document.getElementById("lang_value");
     	if(lang_button != null){
-    		console.log("ici")
     		lang_button.value = lang_value;
             changeLang(lang_value)
             if(lang_value == "fr"){
