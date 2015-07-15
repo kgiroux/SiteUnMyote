@@ -86,8 +86,8 @@
 		<div class="clearfix"></div>
 <!--//header-->
 <!--banner-->
-<div id="home" class="banner movetofront">
-	<div id="video-bg" class="banner"></div>
+<div class="banner">
+	<div id="video-bg" class="banner">
 		<script type="text/javascript">
 			var tag = document.createElement('script');
 		    tag.src = "http://www.youtube.com/player_api";
@@ -99,7 +99,7 @@
 		    var player;
 		    function onYouTubePlayerAPIReady() {
 		      player = new YT.Player('video-bg', {
-		        playerVars: { 'autoplay': 1, 'controls': 0,'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
+		        playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
 		        videoId: 'oWu9TFJjHaM',
 		        events: {
 		          'onReady': onPlayerReady}
@@ -111,69 +111,69 @@
 		      event.target.mute();
 		    }
 	    </script>
-	    
-		<div class="cadre">
-				<div class="container">	
-					<!-- responsiveslides -->
-					<script src="./js/responsiveslides.min.js"></script>
-						<script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							 // Slideshow 4
-							$("#slider3").responsiveSlides({
-								auto: true,
-								pager: true,
-								nav: false,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-							$('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-								$('.events').append("<li>after event fired.</li>");
-								}
-								});
-								});
-					</script>
-					<!-- responsiveslides -->
-					<div  id="top" class="callbacks_container">
-						<ul class="rslides" id="slider3">
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE</h1>
-									<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
-									<div class="start">
-											<a class="scroll button_start" href="#about">START TOUR</a>
-											<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE</h1>
-									<p class="text_slide" >SOFTWARE SOLUTION</p>
-									<div class="start">
-											<a class="scroll button_start" href="#about">START TOUR</a>
-											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE </h1>
-									<p class="text_slide">POWERED BY MYO </p>
-									<div class="start">
-											<a class="scroll button_start" href="#about">START TOUR</a>
-											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-						</ul>
+	</div>
+	<div class="container">
+		<div class="cadre"></div>
+	</div>
+	<div class="container">	
+		<!-- responsiveslides -->
+		<script src="./js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			 // Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+			$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+				}
+				});
+				});
+		</script>
+		<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE</h1>
+						<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
 					</div>
-				</div>
+					<br>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE</h1>
+						<p class="text_slide" >SOFTWARE SOLUTION</p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
+					</div>
+					<br>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE </h1>
+						<p class="text_slide">POWERED BY MYO </p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
+					</div>
+					<br>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>

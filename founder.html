@@ -53,8 +53,8 @@
 </div>
 <!--//header-->
 <!--banner-->
-<div id="home" class="banner">
-	<div id="video-bg" class="banner"></div>
+<div class="banner">
+	<div id="video-bg" class="banner">
 		<script type="text/javascript">
 			var tag = document.createElement('script');
 		    tag.src = "http://www.youtube.com/player_api";
@@ -66,7 +66,7 @@
 		    var player;
 		    function onYouTubePlayerAPIReady() {
 		      player = new YT.Player('video-bg', {
-		        playerVars: { 'autoplay': 1, 'controls': 0,'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
+		        playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
 		        videoId: 'oWu9TFJjHaM',
 		        events: {
 		          'onReady': onPlayerReady}
@@ -78,111 +78,112 @@
 		      event.target.mute();
 		    }
 	    </script>
-	    
-		<div class="cadre">
-			<div class="movetofront">
-				<div class="container">	
-					<!-- responsiveslides -->
-					<script src="./js/responsiveslides.min.js"></script>
-						<script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							 // Slideshow 4
-							$("#slider3").responsiveSlides({
-								auto: true,
-								pager: true,
-								nav: false,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-							$('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-								$('.events').append("<li>after event fired.</li>");
-								}
-								});
-								});
-					</script>
-					<!-- responsiveslides -->
-					<div  id="top" class="callbacks_container">
-						<ul class="rslides" id="slider3">
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE</h1>
-									<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
-									<div class="start">
-											<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE</h1>
-									<p class="text_slide" >SOFTWARE SOLUTION</p>
-									<div class="start">
-											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-							<li>
-								<div class="banner-info text-center">
-									<h1>UNMYOTE </h1>
-									<p class="text_slide">POWERED BY MYO </p>
-									<div class="start">
-											<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
-									</div>
-								</div>
-								<br>
-							</li>
-						</ul>
+	</div>
+	<div class="container">
+		<div class="cadre"></div>
+	</div>
+	<div class="container">	
+		<!-- responsiveslides -->
+		<script src="./js/responsiveslides.min.js"></script>
+		<script>
+			// You can also use "$(window).load(function() {"
+			$(function () {
+			 // Slideshow 4
+			$("#slider3").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+			$('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+				$('.events').append("<li>after event fired.</li>");
+				}
+				});
+				});
+		</script>
+		<!-- responsiveslides -->
+		<div  id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE</h1>
+						<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
 					</div>
-				</div>
-			</div>
+					<br>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE</h1>
+						<p class="text_slide" >SOFTWARE SOLUTION</p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
+					</div>
+					<br>
+				</li>
+				<li>
+					<div class="banner-info text-center">
+						<h1>UNMYOTE </h1>
+						<p class="text_slide">POWERED BY MYO </p>
+						<div class="start">
+								<a class="scroll button_start" href="#about">START TOUR</a>
+								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
+						</div>
+					</div>
+					<br>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
-	<div class= "containerbootplus center-block">
-		 <div class="row">
-		 
-		 	<div class="col-md-2 col-sm-2 col-xs-2"></div>
-	        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
-	           <div class="well">
-	             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profilepicK.png" style="width: 140px; height: 140px;">
-	             <h2>Kevin Giroux, Founder</h2>
-	             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-	             <div class="keepfounder">
-						<ul>
-							<li><a class="facebook" href="https://www.facebook.com/kevin.giroux.756"></a></li>
-							<li><a class="twitter" href="https://twitter.com/GirouxKevin"></a></li>
-							<li><a class="googl" href="https://plus.google.com/109156652403283664005/posts"></a></li>
-							<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
-							<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
-						</ul>
-				 </div>
-	            </div>
-	        </div><!-- /.span4 -->
-	        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
-	           <div class="well">
-	             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profilepicC.png" style="width: 140px; height: 140px;">
-	             <h2>Cyril Lefebvre, Founder</h2>
-	             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	             <div class="keepfounder">
-						<ul>
-							<li><a class="facebook" href="https://www.facebook.com/cyril.lefebvre.27"></a></li>
-							<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
-							<li><a class="googl" href="https://plus.google.com/u/1/109924670256087185916/posts"></a></li>
-							<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
-							<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
-						</ul>
-				 </div>
-	            
-	            </div>
-	        </div>
-	        <div class="col-md-2 col-sm-2 col-xs-2"></div>
-	   </div>
-	</div>
+<div class= "containerbootplus center-block">
+	 <div class="row">
+	 
+	 	<div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profilepicK.png" style="width: 140px; height: 140px;">
+             <h2>Kevin Giroux, Founder</h2>
+             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+             <div class="keepfounder">
+					<ul>
+						<li><a class="facebook" href="https://www.facebook.com/kevin.giroux.756"></a></li>
+						<li><a class="twitter" href="https://twitter.com/GirouxKevin"></a></li>
+						<li><a class="googl" href="https://plus.google.com/109156652403283664005/posts"></a></li>
+						<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
+						<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
+					</ul>
+			 </div>
+            </div>
+        </div><!-- /.span4 -->
+        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profilepicC.png" style="width: 140px; height: 140px;">
+             <h2>Cyril Lefebvre, Founder</h2>
+             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+             <div class="keepfounder">
+					<ul>
+						<li><a class="facebook" href="https://www.facebook.com/cyril.lefebvre.27"></a></li>
+						<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
+						<li><a class="googl" href="https://plus.google.com/u/1/109924670256087185916/posts"></a></li>
+						<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
+						<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
+					</ul>
+			 </div>
+            
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+   </div>
+</div>
 <div class="footer">
 	<div class="container">
 		<p>Any questions? Contact us :  <a href="mailto:unmyote@gmail.com">unmyote@gmail.com</a> </p>

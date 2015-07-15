@@ -49,7 +49,7 @@ padding:0;
 #video-bg {
     position: absolute;
     width: 100%;
-    z-index: -2;
+    z-index: 1;
 }
 /*-- header --*/
 .header{
@@ -97,30 +97,23 @@ width:70%;
 /*-- //header --*/
 /*-- banner --*/
 .banner{
-	/*--background:url(../images/banner.jpg) no-repeat 0px 0px;*/
-	background-size:cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	-moz-background-size: cover;
 	min-height: 600px;
     overflow: hidden;
 }
 .cadre{
-	/*min-height: 600px;*/
-    /*padding: 75px 350px;*/
-}
-.movetofront{
-	z-index : -1;
+	z-index: 2;
+	position: absolute;
+	width: inherit;
+	margin-top: 75px;
+	min-height: 450px;
 	background-color : rgba(256, 256, 256, 0.6);
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	border-radius:15px;
-
 }
 .banner-info{
-z-index : 0;
-margin-top:50px;
+z-index : 3;
+margin-top:118px;
 }
 .banner-info h1{
 color:#000000;
@@ -1099,6 +1092,10 @@ height:330px;
 	.banner {
 	  min-height: 466px;
 	  }
+	.cadre{
+	  margin-top: 60px;
+	  min-height: 350px;
+	  }
 	.about-info h3 {
 	  font-size: 25px;
 	  margin: 0 0 16px 0;
@@ -1206,6 +1203,10 @@ height:330px;
 	.banner {
 	  min-height: 373px;
 	}
+	.cadre{
+	  margin-top: 55px;
+	  min-height: 280px;
+	  }
 	.about-info {
 	  margin: 50px 0px 0 32px;
 	}
@@ -1325,6 +1326,10 @@ height:330px;
 	  }
 	.banner {
 	  min-height: 355px;
+	}
+	.cadre{
+	  margin-top: 55px;
+	  min-height: 260px;
 	}
 	.about-info {
 	  margin: 30px 0px 0 25px;
@@ -1547,6 +1552,10 @@ ul.nav1{
 	.banner {
 	  min-height: 282px;
 	}
+	.cadre{
+	  margin-top: 40px;
+	  min-height: 240px;
+	  }
 	.about-info h3, .behind p, .approach-right h3, .kick p, .services h3, .clients h3, .keep h3, .contact-info h3 {
 	  font-size: 20px;
 	}
