@@ -13,6 +13,7 @@
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/timeline.css" type="text/css" media="all" />
 <!--// css -->
 <!-- js -->
 <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -37,8 +38,6 @@
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
-	</script>
-	<script type="text/javascript">
 	</script>
 <!-- start-smoth-scrolling -->
 </head>
@@ -221,23 +220,13 @@
 	</div>
 </div>
 <!--TIME LINE-->
-<div class="panel timelines">
-    <!-- /.panel-heading -->
-    <div class="panel-body">
-    	<div id="ourhistory" class="ourhistory">
-    	</div>
-	    <div id="timeline">
-	    	<ul id="dates">
-			</ul>
-			<ul id="issues">
-			</ul>
-			<div id="grad_left"></div>
-			<div id="grad_right"></div>
-			<a href="#" id="next">+</a>
-			<a href="#" id="prev">-</a>
-	    </div>
-     </div>
+<div id="ourhistory" class="ourhistory"></div>
+<div class="panel-body">
+    <ul class="timeline" id="timelineId">
+    </ul>
 </div>
+
+
 <div class="clients">
 	<div class="container">
 		<h3 id="partener">SOME OF OUR CLIENTS</h3>
@@ -288,7 +277,7 @@
 <!--keep in touch-->
 <div class="keep">
 	<div class="container">
-		<h3 id="keepintouch">Keep in touch with Us</h3>
+		<div id="keepintouch"></div>
 		<ul>
 			<li><a class="facebook" href="https://www.facebook.com/pages/UnMyote/110064849324870"></a></li>
 			<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
@@ -302,7 +291,6 @@
 <!--footer-->
 <div class="footer">
 	<div class="container">
-		<p>Any questions? Contact us :  <a href="mailto:unmyote@gmail.com">unmyote@gmail.com</a> </p>
 		<p>Copyright &copy; 2015 UNMYOTE</p>
 	</div>
 </div>
