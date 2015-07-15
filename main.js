@@ -45,14 +45,14 @@
             		changeLang("fr");
             		this.value = "en";
             		var img_button = document.getElementById("image_drapeau");
-            		img_button.src="./images/drapeau_anglais.jpg";
+            		img_button.src="./images/utils/drapeau_anglais.jpg";
             		img_button.alt ="english_flag";
             	}else{
             		createCookie("lang","en",365)
             		changeLang("en");
             		this.value ="fr";
             		var img_button = document.getElementById("image_drapeau");
-            		img_button.src="./images/drapeau_france.jpg";
+            		img_button.src="./images/utils/drapeau_france.jpg";
             		img_button.alt="french_flag";
             	}
             }
@@ -68,10 +68,10 @@
             changeLang(lang_value)
             if(lang_value == "fr"){
             	var img_button = document.getElementById("image_drapeau");
-        		img_button.src="./images/drapeau_anglais.jpg";
+        		img_button.src="./images/utils/drapeau_anglais.jpg";
             }else{
             	var img_button = document.getElementById("image_drapeau");
-        		img_button.src="./images/drapeau_france.jpg";
+        		img_button.src="./images/utils/drapeau_france.jpg";
             }
     	}
     }else{
@@ -190,8 +190,6 @@
         if(data_element_text != null){
         	data_element_text.appendChild(title);
         }
-    	
-    	console.log(text);
     	var ul = document.getElementById("timelineId");
     	
     	while(ul.firstChild != null){
@@ -207,7 +205,6 @@
         	divBadge.classList.add("timeline-badge");
         	var iImage = document.createElement("i");
         	iImage.classList.add("fa");
-        	console.log(text.timeline[i].type);	
         	switch(text.timeline[i].type){
         	case "1" :
         		// NewsPaper symbole

@@ -2,10 +2,6 @@
 	"texten": {
 		"about": "UNMYOTE is a product which uses Thalmic Labs technology : MYO.\n MYO is an armband that can capture the position and the movement of the arm and the hand. With different applications, the armband can control many thing on computer.\nWith this technology, we would like to offer a solution to translate sign language with 2 armbands.",
 		"approach": "Mutism is a condition that affects one child in 150. These people encounter real difficulty communicating with everyone who doesn't know or understand sign language.\nWhen they want to speak with their family, friends, colleagues or just for everyday conversation, mute people face barriers that make social interaction impossible.\nWith a MYO armband and our software, we offer a new tool for enabling communication which is essential for their work and social life. With UNMYOTE, a smartphone, a tablet or a computer will become the sign language interpreter.",
-		"genese": "",
-		"services": "",
-		"user": "",
-		"help": "",
 		"menu": ["HOME",
 		"ABOUT",
 		"APPROACH",
@@ -27,8 +23,8 @@
 			"title": "Birth",
 			"date": "April 2015",
 			"body": "Fundation of the project for the \"Les Talents du Numérique\" competition.",
-			"img": "images/LogoUnmyote.png",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/LogoUnmyote.png",
+			"altimg": "LOGO"
 		},
 		{
 			"id" : "timeline2",
@@ -36,11 +32,8 @@
 			"title": "Publicity",
 			"date": "April-May 2015",
 			"body": "Articles in two newspapers (Le Paris-Normandie, L'Impartiale) and interviews for three radio stations (France Inter, France Bleue Haute-Normandie, Radio Cristal) about the UNMYOTE project !",
-			"img": "images/media.jpg",
-			"altimg": "TEXTImage",
-			"video" :"",
-			"download" : "",
-			"downloadname": ""
+			"img": "images/timeline/media.jpg",
+			"altimg": "MEDIA"
 		},
 		{
 			"id" : "timeline3",
@@ -48,8 +41,8 @@
 			"title": "Talents du numérique",
 			"date": "21 mai 2015",
 			"body": "Awards ceremony for the contest \"Les Talents du Numérique\". Meeting lots of prominent people in the digital field : Guy Mamou-Mani (CEO of Syntec Numérique), Bertin Nahum (Founder and CEO of Medtech), Pierre-Noel Luiggi (Founder of Oscaro.com), and many more.",
-			"img": "images/TDN.png",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/TDN.png",
+			"altimg": "TDN"
 			
 		},
 		{
@@ -58,8 +51,8 @@
 			"title": "Armbands are here!",
 			"date": "July 2015", 
 			"body": "Two MYO armbands arrived and now we started testing.",
-			"img": "images/myo.jpg",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/myo.jpg",
+			"altimg": "MYO"
 		},
 		{
 			"id" : "timeline5",
@@ -67,17 +60,13 @@
 			"title": "Launch of the UNMYOTE website!",
 			"date": "date ici2",
 			"body": "Opening of the UNMYOTE website that allows you to keep in touch with us, with our accounts on the different social media and with our news.",
-			"img": "images/website.jpg",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/website.jpg",
+			"altimg": "WEBSITE"
 		}]
 	},
 	"textfr": {
 		"about": "UNMYOTE est un produit utilisant la technologie de la société Thalmic Labs : MYO.\nMYO est un bracelet dont la capacité est de capter la position ainsi que le mouvement du bras et de la main. Par le biais d’une interprétation logiciel, ce dispositif permet de réaliser toutes sortes d'actions.\nVia cette technologie, nous souhaitons proposer une solution logiciel qui, à l'aide de deux bracelet MYO, permettra de traduire la langue des signes pour les personnes atteintes de mutisme.\n",
 		"approach": "Le mutisme est un handicap qui, de nos jours, touche près d'un enfant sur 150. Ces personnes rencontrent une difficulté réelle de communication avec toute personne ne maitrisant pas la langue des signes.\nQue ce soit pour communiquer avec leur entourage personnel, professionnel ou bien pour les discussions de la vie de tous les jours, les \"muets\" se retrouvent fasse à une réelle barière qui les éloigne de l'aspect social de notre monde.\nL'utilisation du bracelet MYO couplé à notre logiciel permettra à ces gens de retrouver une facilité de communication essentielle à leur insertion professionelle et sociale.\nGrace à UNMYOTE, un simple smartphone, une tablette ou un ordinateur deviendra l'interprète privilégié de la langue des signes.",
-		"genese": "",
-		"services": "",
-		"user": "",
-		"help": "",
 		"menu": ["ACCUEIL",
 		"A PROPOS",
 		"APPROCHE",
@@ -99,8 +88,8 @@
 			"title": "Naissance",
 			"date": "Avril 2015",
 			"body": "Naissance du projet et participation au concours \"Les Talents du Numérique\"",
-			"img": "images/LogoUnmyote.png",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/LogoUnmyote.png",
+			"altimg": "LOGO"
 		},
 		{
 			"id" : "timeline2",
@@ -108,10 +97,8 @@
 			"title": "Publicité",
 			"date": "Avril-Mai 2015",
 			"body": "Parution dans 2 journaux (Le Paris-Normandie, L'Impartiale) et sur 3 radios (France Inter, France Bleue Haute-Normandie, Radio Cristal) du projet UNMYOTE !",
-			"altimg": "TEXTImage",
-			"video" :"L7zTyFp0Ftg",
-			"download" : "",
-			"downloadname": ""
+			"img" : "images/timeline/media.jpg",
+			"altimg": "MEDIA"
 		},
 		{
 			"id" : "timeline3",
@@ -119,8 +106,8 @@
 			"title": "Talents du numérique",
 			"date": "21 mai 2015",
 			"body": "Soirée de remise de prix pour le concours \"Les Talents du Numérique\". Rencontre de nombreuses personnes dans le domaine du numérique : Guy Mamou-Mani (président de Syntec Numérique), Bertin Nahum (Fondateur et président de Medtech), Pierre-Noel Luiggi (Fondateur d'Oscaro.com), et plein d'autres ...",
-			"img": "images/TDN.png",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/TDN.png",
+			"altimg": "TDN"
 			
 		},
 		{
@@ -129,8 +116,8 @@
 			"title": "Reception des bracelets !",
 			"date": "Juillet 2015",
 			"body": "Réception des 2 bracelets MYO et début des tests pour en évaluer les capacités.",
-			"img": "images/myo.jpg",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/myo.jpg",
+			"altimg": "MYO"
 		},
 		{
 			"id" : "timeline5",
@@ -138,8 +125,8 @@
 			"title": "Lancement du site UNMYOTE !",
 			"date": "date ici2",
 			"body": "Ouverture du site UNMYOTE qui rendra compte de l'actualité du projet et permettra de faire le lien avec nos pages sur les différents réseaux sociaux.",
-			"img": "images/website.jpg",
-			"altimg": "TEXTImage"
+			"img": "images/timeline/website.jpg",
+			"altimg": "WEBSITE"
 		}]
 	}
 }

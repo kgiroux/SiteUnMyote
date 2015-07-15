@@ -2,7 +2,7 @@ body{
 	margin:0;
 	padding:0;
 	background:#fff;
-	background-image: url("../images/background.jpg");
+	background-image: url("../images/utils/background.jpg");
 	background-size: contain;
  }
 body a{
@@ -27,7 +27,7 @@ p{
 }
 
 .logo{
-	content:url("../images/LogoUnMyoteHeader.png");
+	content:url("../images/logo/LogoUnMyoteHeader.png");
 	width : auto;
 		height :auto;
 }
@@ -246,7 +246,7 @@ color:#46c4da;
 	text-decoration: none;
 	height: 61px;
 	width: 55px;
-	background: transparent url("../images/themes.png") no-repeat left top;
+	background: transparent url("../images/utils/themes.png") no-repeat left top;
 	margin-top: -65px;
 }
 .callbacks_nav:active {
@@ -538,12 +538,12 @@ font-weight:400;
 .nbs-flexisel-nav-left {
 left: -4.3%;
 top: 20% !important;
-background: url(../images/themes.png) no-repeat 0px 0px;
+background: url(../images/utils/themes.png) no-repeat 0px 0px;
 }
 .nbs-flexisel-nav-right {
 right: -4.3%;
 top: 20% !important;
-background: url(../images/themes.png) no-repeat -24px 0px;
+background: url(../images/utils/themes.png) no-repeat -24px 0px;
 }
 /*--//flexisel--*/
 .clients h3{
@@ -567,7 +567,7 @@ padding:70px 0;
 margin-top:50px;
 }
 .keep{
-background:url(../images/banner2.jpg) no-repeat 0px 0px;
+background:url(../images/utils/banner2.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -604,53 +604,53 @@ border-radius: 88px;
 	margin: 0 8px;
 	}
 .keep ul li a.facebook{
-	background: url(../images/social.png) no-repeat 0px 0px;
+	background: url(../images/utils/social.png) no-repeat 0px 0px;
 	display: block;
 	width: 48px;
 	height: 48px;
 	}
 .keep ul li a.facebook:hover{
-	background: url(../images/social2.png) no-repeat 0px 0px;
+	background: url(../images/utils/social2.png) no-repeat 0px 0px;
 	transform: rotateY(360deg);
 	}
 .keep ul li a.twitter{
-	background: url(../images/social.png) no-repeat -57px 0px;
+	background: url(../images/utils/social.png) no-repeat -57px 0px;
 	display: block;
 	width: 48px;
 	height: 48px;
 	}
 .keep ul li a.twitter:hover{
-	background: url(../images/social2.png) no-repeat -57px 0px;
+	background: url(../images/utils/social2.png) no-repeat -57px 0px;
 	transform: rotateY(360deg);
 	}
 .keep ul li a.googl{
-	background: url(../images/social.png) no-repeat -116px 0px;
+	background: url(../images/utils/social.png) no-repeat -116px 0px;
 	display: block;
 	width: 48px;
 	height: 48px;
 	}
 .keep ul li a.googl:hover{
-	background: url(../images/social2.png) no-repeat -116px 0px;
+	background: url(../images/utils/social2.png) no-repeat -116px 0px;
 	transform: rotateY(360deg);
 	}
 .keep ul li a.message{
-	background: url(../images/social.png) no-repeat -175px 0px;
+	background: url(../images/utils/social.png) no-repeat -175px 0px;
 	display: block;
 	width: 48px;
 	height: 48px;
 	}
 .keep ul li a.message:hover{
-	background: url(../images/social2.png) no-repeat -175px 0px;
+	background: url(../images/utils/social2.png) no-repeat -175px 0px;
 	transform: rotateY(360deg);
 	}
 .keep ul li a.youtube{
-	background: url(../images/social.png) no-repeat -234px 0px;
+	background: url(../images/utils/social.png) no-repeat -234px 0px;
 	display: block;
 	width: 48px;
 	height: 48px;
 	}
 .keep ul li a.youtube:hover{
-	background: url(../images/social2.png) no-repeat -234px 0px;
+	background: url(../images/utils/social2.png) no-repeat -234px 0px;
 	transition: .5s all;
 	-webkit-transition: .5s all;
 	-o-transition: .5s all;
@@ -789,7 +789,7 @@ color:#000000;
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/arr.png") no-repeat 0px 0px;
+	background: url("../images/utils/arr.png") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
@@ -1349,7 +1349,7 @@ height:330px;
 		text-align : center;
 	}
 	.logo{
-		content:url("../images/logo.png");
+		content:url("../images/logo/logo.png");
 		width : 50px;
 		height :50px;
 	}
@@ -1560,7 +1560,7 @@ ul.nav1{
 	  height: 190px;
 	}
 	.logo{
-		content:url("../images/logo.png");
+		content:url("../images/logo/logo.png");
 		width : 50px;
 		height :50px;
 	}
