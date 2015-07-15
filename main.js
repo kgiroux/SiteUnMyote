@@ -84,8 +84,6 @@
     function changeLang(langvalue){
     	var tab_lang_fr = config.menufr;
     	var tab_lang_en = config.menuen;
-    	var slidingtext_en= config.slidingtexten; 
-    	var slidingtext_fr= config.slidingtextfr;
     	
     	if(langvalue =="en"){
     		text = config.texten;
