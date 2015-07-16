@@ -71,10 +71,10 @@ session_start();
 					echo "<script>OK()</script>";
 				}
 				else
+					$_SESSION["SUCCESSFUL"] = null;
+					$_SESSION["RESULTSQL"] = null;
 					echo "<script>failed()</script>";
 			}
-			else
-				echo "<script>failed()</script>";
 		}
 	}
 ?>
