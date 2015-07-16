@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <title>UNMYOTE</title>
@@ -8,20 +8,22 @@
 <meta name="keywords" content="UNMYOTE template" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
-
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--// bootstrap-css -->
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/timeline.css" type="text/css" media="all" />
 <!--// css -->
 <!-- js -->
+
+
+<script data-main="mainFounder" src="libs/require.js/require.js"></script>
+
 <script type="text/javascript" src="./js/jquery.min.js"></script>
-
-
-<script data-main="main" src="libs/require.js/require.js"></script>
-<script src="js/jquery.timelinr-0.9.54.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
+
+
 <!-- js -->
 <!--fonts-->
 	<link rel="stylesheet" href="./css/font-awesome-4.3.0/font-awesome-4.3.0/css/font-awesome.min.css">
@@ -39,21 +41,20 @@
 		});
 	});
 	</script>
+	
 <!-- start-smoth-scrolling -->
 </head>
 
 <body>
 <data-lang lang="en"/>
-<!--header-->
 <nav class="navbar navbar-inverse">		
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	     <a class="" href="index.html">
+	     <a class="" href="index.php">
 	    		<img class="logo" src="./images/logo/LogoUnMyoteHeader.png" alt=""/>
 	 	  </a>
-	 	  
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
@@ -63,11 +64,6 @@
 	    
 		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 			<ul class="nav1 nav navbar-nav">
-				<li><a class="scroll active menu_class" href="#home">HOME</a></li>
-				<li><a class="scroll menu_class" href="#about">ABOUT</a></li>	
-				<li><a class="scroll menu_class" href="#approach">OUR  APPROACH</a></li>
-				<li><a class="scroll menu_class history" href="#ourhistory">HISTORY</a></li>
-				<li><a class="menu_class" href="./founder.html">FOUNDER</a></li>
 				<li><a id="lang_value" value="en"><img id="image_drapeau" src="./images/utils/drapeau_france.jpg" alt="drapeau_france"></a>
 			</ul>
 		<!-- script for menu -->
@@ -82,9 +78,7 @@
 		</div>
 	</div>
 </nav>
-		<div class="clearfix"></div>
-<!--//header-->
-<!--banner-->
+<div class="clearfix"></div>
 <div class="banner">
 	<div id="video-bg" class="banner">
 		<script type="text/javascript">
@@ -98,8 +92,8 @@
 		    var player;
 		    function onYouTubePlayerAPIReady() {
 		      player = new YT.Player('video-bg', {
-		        playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'wmode':'opaque', 'loop': 1, 'playlist': '7BJDSnA_H84' },
-		        videoId: '7BJDSnA_H84',
+		        playerVars: { 'autoplay': 1, 'controls': 0, 'showinfo': 0, 'rel': 0, 'wmode':'opaque', 'loop': 1, 'playlist': 'oWu9TFJjHaM' },
+		        videoId: 'oWu9TFJjHaM',
 		        events: {
 		          'onReady': onPlayerReady}
 		      });
@@ -144,7 +138,6 @@
 						<h1>UNMYOTE</h1>
 						<p class="text_slide">A SOLUTION FOR PEOPLE SUFFERING OF MUTISM </p>
 						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
 								<a class="sendaquote"  href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
@@ -155,7 +148,6 @@
 						<h1>UNMYOTE</h1>
 						<p class="text_slide" >SOFTWARE SOLUTION</p>
 						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
 								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
@@ -166,7 +158,6 @@
 						<h1>UNMYOTE </h1>
 						<p class="text_slide">POWERED BY MYO </p>
 						<div class="start">
-								<a class="scroll button_start" href="#about">START TOUR</a>
 								<a class="sendaquote" href="https://twitter.com/intent/tweet?text=@UnMyote">SEND A QUOTE</a>
 						</div>
 					</div>
@@ -176,116 +167,45 @@
 		</div>
 	</div>
 </div>
-<!--//banner-->
-
-<!--about-->
-<div id="about" class="about">
-	<div class="about-grids">
-		<div class="about-right">
-			<img src="images/other/myo.jpg" alt=""/>
-		</div>
-		<div class="about-left">
-			<div class="about-info" id="about_text">
-			</div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
+<div class= "containerbootplus center-block">
+	 <div class="row">
+	 
+	 	<div class="col-md-2 col-sm-2 col-xs-2"></div>
+        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profil/profilepicK.png" style="width: 140px; height: 140px;">
+             <h2 class="titleName">Kevin Giroux, Founder</h2><br>
+             <p class="study">Ingénieur en Système d'Information - ESIGELEC</p>
+             <p class="jobUnMyote">Responsable technique et développeur.</p><br>
+             <i class="quoteUnMyote">"UnMyote est un projet basé sur un concept innovant, pouvant être l'opportunité de rendre plus facile l'intégration des personnes atteintes de mutisme"</i>
+             <div class="keepfounder">
+					<ul>
+						<li><a class="twitter" href="https://twitter.com/GirouxKevin"></a></li>
+						<li><a class="googl" href="https://plus.google.com/109156652403283664005/posts"></a></li>
+						<li><a class="message" href="mailto:giroux.kevin.fr@gmail.com"></a></li>
+					</ul>
+			 </div>
+            </div>
+        </div><!-- /.span4 -->
+        <div class="col-md-4 col-sm-4 col-xs-4 text-center founder">
+           <div class="well">
+             <img class="img-circle" data-src="holder.js/140x140" alt="140x140" src="images/profil/profilepicC.png" style="width: 140px; height: 140px;">
+             <h2 class="titleName">Cyril Lefebvre, Founder</h2><br>
+             <p class="study">Ingénieur en Système d'Information - ESIGELEC</p>
+             <p class="jobUnMyote">Responsable communication/marketing et développeur.</p><br>
+             <i class="quoteUnMyote">"UnMyote représente plus qu'un simple traducteur, c'est l'opportunité de donner toutes les chances aux personnes atteintes de mutisme."</i>
+             <div class="keepfounder">
+					<ul>
+						<li><a class="twitter" href="https://twitter.com/LirycMoaners"></a></li>
+						<li><a class="message" href="mailto:cyril.lefebvre.27@gmail.com"></a></li>
+					</ul>
+			 </div>
+            
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"></div>
+   </div>
 </div>
-<!--//about-->
-<!--behind-->
-<div class="behind">
-	<div class="container">
-	</div>
-</div>
-<!--//behind-->
-<!--approach-->
-<div id="approach" class="approach">
-	<div class="approach-grids">
-		<div class="approach-left">
-			<img id="principe_pic" src="./images/other/principeUnMyoteen.png" alt=""/>
-		</div>
-		<div class="approach-right" id="approach_text">
-			
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
-<!--//approach-->
-<!--services-->
-<div class="behind">
-	<div class="container">
-	</div>
-</div>
-<!--TIME LINE-->
-<div id="ourhistory" class="ourhistory"></div>
-<div class="panel-body">
-    <ul class="timeline" id="timelineId">
-    </ul>
-</div>
-
-
-<div class="clients">
-	<div class="container">
-		<h3 id="partener">SOME OF OUR CLIENTS</h3>
-		<div class="flex-slider">
-			<ul id="flexiselDemo1">
-				<li>
-					<a href="http://www.lestalentsdunumerique.fr"><img src="./images/partner/TDN.png" alt=""/></a>
-				</li>
-				<li>
-					<a href="https://www.thalmic.com"><img src="./images/partner/TL.png" alt=""/></a>
-				</li>
-				<li>
-					<a href="https://www.esigelec.fr"><img src="./images/partner/E.png" alt=""/></a>
-				</li>
-			</ul>
-			<script type="text/javascript">
-							$(window).load(function() {
-								$("#flexiselDemo1").flexisel({
-									visibleItems: 3,
-									animationSpeed: 1000,
-									autoPlay: true,
-									autoPlaySpeed: 3000,    		
-									pauseOnHover: true,
-									enableResponsiveBreakpoints: true,
-									responsiveBreakpoints: { 
-										portrait: { 
-											changePoint:320,
-											visibleItems: 1
-										}, 
-										landscape: { 
-											changePoint:640,
-											visibleItems: 1
-										},
-										tablet: { 
-											changePoint:768,
-											visibleItems: 3
-										}
-									}
-								});
-								
-							});
-			</script>
-			<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		</div>
-	</div>
-</div>
-<!--//clients-->
-<!--keep in touch-->
-<div class="keep">
-	<div class="container">
-		<div id="keepintouch"></div>
-		<ul>
-			<li><a class="facebook" href="https://www.facebook.com/pages/UnMyote/110064849324870"></a></li>
-			<li><a class="twitter" href="https://twitter.com/UnMyote"></a></li>
-			<li><a class="googl" href="https://plus.google.com/u/1/109924670256087185916/posts"></a></li>
-			<li><a class="message" href="mailto:unmyote@gmail.com"></a></li>
-			<li><a class="youtube" href="https://www.youtube.com/channel/UCyoIXF4sV2KeNHZsbmU2fug"></a></li>
-		</ul>
-	</div>
-</div>
-<!--//keep in touch-->
-<!--footer-->
 <div class="footer">
 	<div class="container">
 		<p>Copyright &copy; 2015 UNMYOTE</p>

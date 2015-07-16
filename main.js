@@ -175,10 +175,45 @@
         }
         title = document.createElement("h3");
         title.textContent = text.keepintouch;
-        if(data_element_text != null){
-	        data_element_text.appendChild(title);
-        }
+        
+        var divForm = document.createElement("div")
+        divForm.classList.add("text-center");
+        
+        
+        
+        var h2Title = document.createElement("h2");
+        h2Title.textContent = text.subscribeletter;
+        h2Title.classList.add("text-success");
+        
+        var form = document.createElement("form");
+        form.classList.add("form-inline");
+        form.setAttribute("method","post");
+        form.setAttribute("action","optFile.php");
+        
+        var inputEmail = document.createElement("input");
+        inputEmail.classList.add("form-control");
+        inputEmail.setAttribute("type","email");
+        inputEmail.setAttribute("id","email");
+        inputEmail.setAttribute("name","email");
+        inputEmail.setAttribute("placeholder","email@email.com");
+        
+        var inputSubmit = document.createElement("input");
+        inputSubmit.classList.add("btn");
+        inputSubmit.classList.add("btn-default");
+        inputSubmit.setAttribute("value",text.buttonSubmit);
+        inputSubmit.setAttribute("type","submit");
+        
+        form.appendChild(inputEmail);
+        form.appendChild(inputSubmit);
+ 
     
+		if(data_element_text != null){
+	        data_element_text.appendChild(title);
+	        divForm.appendChild(h2Title);
+	        divForm.appendChild(form);
+	        data_element_text.appendChild(divForm)
+        }
+		
         changeTimeLine();
     }
     

@@ -18,6 +18,8 @@
 		"ourhistory": "Our History",
 		"keepintouch": "Keep in touch with us!",
 		"Someofourpartener":"Our Partners",
+		"subscribeletter" : "Subscribe to our Newsletter",
+		"buttonSubmit" : "Submit",
 		"timeline": [{
 			"id" : "timeline1",
 			"type": "1",
@@ -84,6 +86,8 @@
 		"ourhistory": "Notre Histoire",
 		"keepintouch": "Contactez-nous !",
 		"Someofourpartener":"Nos Partenaires",
+		"subscribeletter" : "S'inscrire à la newsletter",
+		"buttonSubmit" : "Envoyer",
 		"timeline": [{
 			"id" : "timeline1",
 			"type": "1",
