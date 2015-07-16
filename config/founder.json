@@ -11,16 +11,16 @@
             "Cyril Lefebvre, Founder"
         ],
         "study": [
-            "Information System Engineer - ESIGELEC",
-            "Information System Engineer - ESIGELEC"
+            "Information Technology Engineer - ESIGELEC",
+            "Information Technology Engineer - ESIGELEC"
         ],
         "jobUnMyote": [
-            "Technical lead and Developper",
-            "Communication / Marketing lead and Developper"
+            "Technical and Developer Lead",
+            "Communication / Marketing Lead and Developer"
         ],
         "quoteUnMyote": [
-            "\"The project of UnMyote is based on the concept of an innovation which could make life easier for persons who suffer from dumbness\"",
-            "\"UnMyote is more than a simple translater, it is the opportunity to give all cards for persons suffer of dumbness\""
+            "\"Communicating with everyone is the fundamental principle both for this project and life in society. Answering this problem is the key to reducing the gaps between communities.\"",
+            "\"UnMyote is more than a simple translation tool, it's the opportunity to open new doors for people affected by mutism.\""
         ]
     },
     "textfr": {
@@ -31,7 +31,7 @@
         ],
         "sendaquote": "TWITTER",
         "title": [
-            "Kevin Giroux, Fondateur",
+            "Kévin Giroux, Fondateur",
             "Cyril Lefebvre, Fondateur"
         ],
         "study": [
@@ -43,7 +43,7 @@
             "Responsable communication/marketing et développeur."
         ],
         "quoteUnMyote": [
-            "\"UnMyote est un projet basé sur un concept innovant, pouvant être l'opportunité de rendre plus facile l'intégration des personnes atteintes de mutisme\"",
+            "\"Communiquer avec tous est le principe fondamental de ce projet et de la vie en société. Résoudre ce problème est la clé pour réduire les fossés entre les communautés.\"",
             "\"UnMyote représente plus qu'un simple traducteur, c'est l'opportunité de donner toutes les chances aux personnes atteintes de mutisme.\""
         ]
     }
