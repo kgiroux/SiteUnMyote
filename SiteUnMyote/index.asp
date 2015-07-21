@@ -288,7 +288,7 @@
 	<div class="container">
 		<div id="keepintouch">
 			<h2>Subscribe to our Newsletter </h2>
-			<form class="form-inline" method="post" action="optFile.php">
+			<form class="form-inline" method="post" action="SubscriberController/subscribe">
 				<input class="form-control" type="email" id="email" name="email">
 				<input type="submit" class="btn btn-default" value="Submit">
 			</form>
