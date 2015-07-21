@@ -1,7 +1,4 @@
-<?php
-session_start();
-?>
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title>UNMYOTE</title>
@@ -58,26 +55,6 @@ session_start();
 
 <body>
 <data-lang lang="en" />
-
-<?php 
-	
-	if(isset($_SESSION["RESULTSQL"])){
-		$check = $_SESSION["RESULTSQL"];
-		if(!is_null($check)){
-			if(boolval($check) == 1){
-				if(boolval($_SESSION["SUCCESSFUL"]) == 1){
-					$_SESSION["SUCCESSFUL"] = null;
-					$_SESSION["RESULTSQL"] = null;
-					echo "<script>OK()</script>";
-				}
-				else
-					$_SESSION["SUCCESSFUL"] = null;
-					$_SESSION["RESULTSQL"] = null;
-					echo "<script>failed()</script>";
-			}
-		}
-	}
-?>
 
 <!--header-->
 <nav class="navbar navbar-inverse">		
