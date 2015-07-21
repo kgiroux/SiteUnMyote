@@ -4,7 +4,7 @@
 <title>UNMYOTE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="shortcut icon" href="./images/Logo.png" >
+<link rel="shortcut icon" href="./images/logo/logo.png" >
 <meta name="keywords" content="UNMYOTE template" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -288,10 +288,13 @@
 	<div class="container">
 		<div id="keepintouch">
 			<h2>Subscribe to our Newsletter </h2>
-			<form class="form-inline" method="post" action="optFile.php">
-				<input class="form-control" type="email" id="email" name="email">
-				<input type="submit" class="btn btn-default" value="Submit">
-			</form>
+            <% using (Html.BeginForm()) {%>
+             <%: Html.ValidationSummary(true) %>
+			    <form class="form-inline" method="post">
+				    <input class="form-control" type="email" id="email" name="email">
+				    <input type="submit" class="btn btn-default" value="Submit">
+			    </form>
+            <% } %>
 		</div>
 		<ul>
 			<li><a class="facebook" href="https://www.facebook.com/pages/UnMyote/110064849324870"></a></li>
