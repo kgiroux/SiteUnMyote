@@ -1,0 +1,50 @@
+{
+    "texten": {
+        "slidingtext": [
+            "A SOLUTION FOR PEOPLE WITH MUTISM",
+            "SOFTWARE SOLUTION",
+            "POWERED BY MYO"
+        ],
+        "sendaquote": "SEND A QUOTE",
+        "title": [
+            "Kevin Giroux, Founder",
+            "Cyril Lefebvre, Founder"
+        ],
+        "study": [
+            "Information Technology Engineer - ESIGELEC",
+            "Information Technology Engineer - ESIGELEC"
+        ],
+        "jobUnMyote": [
+            "Technical and Developer Lead",
+            "Communication / Marketing Lead and Developer"
+        ],
+        "quoteUnMyote": [
+            "\"Communicating with everyone is the fundamental principle both for this project and life in society. Answering this problem is the key to reducing the gaps between communities.\"",
+            "\"UnMyote is more than a simple translation tool, it's the opportunity to open new doors for people affected by mutism.\""
+        ]
+    },
+    "textfr": {
+        "slidingtext": [
+            "POUR LES PERSONNES SOUFFRANT DE MUTISME",
+            "SOLUTION LOGICIEL",
+            "POWERED BY MYO"
+        ],
+        "sendaquote": "TWITTER",
+        "title": [
+            "Kévin Giroux, Fondateur",
+            "Cyril Lefebvre, Fondateur"
+        ],
+        "study": [
+            "Ingénieur en Système d'Information - ESIGELEC",
+            "Ingénieur en Système d'Information - ESIGELEC"
+        ],
+        "jobUnMyote": [
+            "Responsable technique et développeur.",
+            "Responsable communication/marketing et développeur."
+        ],
+        "quoteUnMyote": [
+            "\"Communiquer avec tous est le principe fondamental de ce projet et de la vie en société. Résoudre ce problème est la clé pour réduire les fossés entre les communautés.\"",
+            "\"UnMyote représente plus qu'un simple traducteur, c'est l'opportunité de donner toutes les chances aux personnes atteintes de mutisme.\""
+        ]
+    }
+}
